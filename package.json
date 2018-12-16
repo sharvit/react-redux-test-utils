@@ -28,11 +28,26 @@
   "files": [
     "dist"
   ],
+  "peerDependencies": {
+    "enzyme": "3.x",
+    "enzyme-to-json": "3.x",
+    "react": "16.x",
+    "react-redux": "6.x",
+    "redux": "4.x",
+    "redux-thunk": "2.x"
+  },
   "dependencies": {},
   "devDependencies": {
+    "enzyme": "^3.8.0",
+    "enzyme-to-json": "^3.3.5",
+    "react": "^16.6.3",
+    "react-redux": "^6.0.0",
+    "redux": "^4.0.1",
+    "redux-thunk": "^2.3.0",
     "@babel/cli": "^7.2.0",
     "@babel/core": "^7.2.0",
     "@babel/preset-env": "^7.2.0",
+    "@babel/preset-react": "^7.0.0",
     "@commitlint/cli": "^7.2.1",
     "@commitlint/config-conventional": "^7.1.2",
     "@commitlint/travis-cli": "^7.2.1",
@@ -50,6 +65,7 @@
     "eslint-plugin-node": "^8.0.0",
     "eslint-plugin-prettier": "^3.0.0",
     "eslint-plugin-promise": "^4.0.1",
+    "eslint-plugin-react": "^7.11.1",
     "eslint-plugin-standard": "^4.0.0",
     "jest": "^23.6.0",
     "prettier": "^1.15.3",

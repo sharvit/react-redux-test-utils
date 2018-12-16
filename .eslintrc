@@ -1,23 +1,26 @@
 {
   "parser": "babel-eslint",
   "extends": [
+    "eslint:recommended",
+    "plugin:react/recommended",
     "standard",
     "prettier",
-    "prettier/standard"
+    "prettier/standard",
+    "prettier/react"
   ],
-  "plugins": [
-    "prettier",
-    "standard"
-  ],
+  "plugins": ["react", "prettier", "standard"],
   "env": {
     "node": true,
     "jest": true,
     "jasmine": true
   },
   "rules": {
-    "prettier/prettier": ["error", {
-      "singleQuote": true,
-      "trailingComma": "es5"
-    }]
+    "prettier/prettier": [
+      "error",
+      {
+        "singleQuote": true,
+        "trailingComma": "es5"
+      }
+    ]
   }
 }
