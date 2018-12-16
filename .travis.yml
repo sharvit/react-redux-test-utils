@@ -1,0 +1,24 @@
+language: node_js
+notifications:
+  email: false
+node_js:
+  - 10
+  - 8
+  - 6
+script:
+  - yarn lint:commit-travis
+  - yarn lint
+  - yarn test
+  - yarn build
+after_success: yarn coveralls
+jobs:
+  include:
+    - stage: release
+      if: branch = master
+      node_js: 10
+      deploy:
+        provider: script
+        skip_cleanup: true
+        script:
+          - yarn semantic-release
+

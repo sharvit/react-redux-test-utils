@@ -1,0 +1,76 @@
+{
+  "name": "react-redux-test-utils",
+  "version": "0.0.0-semantic-release",
+  "description": "Utils for testing react-redux applications using enzyme and jest snapshots",
+  "license": "MIT",
+  "repository": "https://github.com/sharvit/react-redux-test-utils",
+  "author": {
+    "name": "Avi Sharvit",
+    "email": "sharvita@gmail.com",
+    "url": "https://sharvit.github.io"
+  },
+  "engines": {
+    "node": ">=6"
+  },
+  "scripts": {
+    "prebuild": "rimraf dist",
+    "build": "babel src --out-dir dist --ignore **/*.test.js",
+    "test:watch": "jest --watch",
+    "test": "jest --coverage",
+    "coveralls": "cat ./coverage/lcov.info | ./node_modules/coveralls/bin/coveralls.js",
+    "lint": "eslint ./src",
+    "lint:commit": "commitlint -e",
+    "lint:commit-travis": "commitlint-travis",
+    "commit": "git-cz",
+    "semantic-release": "semantic-release"
+  },
+  "main": "dist/index.js",
+  "files": [
+    "dist"
+  ],
+  "dependencies": {},
+  "devDependencies": {
+    "@babel/cli": "^7.2.0",
+    "@babel/core": "^7.2.0",
+    "@babel/preset-env": "^7.2.0",
+    "@commitlint/cli": "^7.2.1",
+    "@commitlint/config-conventional": "^7.1.2",
+    "@commitlint/travis-cli": "^7.2.1",
+    "babel-core": "^7.0.0-bridge.0",
+    "babel-eslint": "^10.0.1",
+    "babel-jest": "^23.6.0",
+    "commitlint-config-cz": "^0.11.0",
+    "babel-plugin-add-module-exports": "^1.0.0",
+    "coveralls": "^3.0.2",
+    "cz-conventional-changelog": "2.1.0",
+    "eslint": "^5.10.0",
+    "eslint-config-prettier": "^3.3.0",
+    "eslint-config-standard": "^12.0.0",
+    "eslint-plugin-import": "^2.14.0",
+    "eslint-plugin-node": "^8.0.0",
+    "eslint-plugin-prettier": "^3.0.0",
+    "eslint-plugin-promise": "^4.0.1",
+    "eslint-plugin-standard": "^4.0.0",
+    "jest": "^23.6.0",
+    "prettier": "^1.15.3",
+    "rimraf": "^2.6.2"
+  },
+  "optionalDependencies": {
+    "semantic-release": "^15.13.1"
+  },
+  "jest": {
+    "testEnvironment": "node",
+    "transform": {
+      "^.+\\.js$": "babel-jest"
+    },
+    "collectCoverageFrom": [
+      "src/**/*.js"
+    ]
+  },
+  "config": {
+    "commitizen": {
+      "path": "./node_modules/cz-conventional-changelog"
+    }
+  },
+  "keywords": []
+}
