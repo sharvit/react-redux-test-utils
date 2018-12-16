@@ -1,2 +1,2 @@
-export * from './unit-test-utils';
+export * from './unit-test-helpers';
 export * from './IntegrationTestHelper';
