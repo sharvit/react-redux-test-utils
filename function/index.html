@@ -1,0 +1,784 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <base data-ice="baseUrl" href="../">
+  <title data-ice="title">Function | react-redux-test-utils</title>
+  <link type="text/css" rel="stylesheet" href="css/style.css">
+  <link type="text/css" rel="stylesheet" href="css/prettify-tomorrow.css">
+  <script src="script/prettify/prettify.js"></script>
+  <script src="script/manual.js"></script>
+<meta name="description" content="Utils for testing react-redux applications using enzyme and jest snapshots"><meta property="twitter:card" content="summary"><meta property="twitter:title" content="react-redux-test-utils"><meta property="twitter:description" content="Utils for testing react-redux applications using enzyme and jest snapshots"></head>
+<body class="layout-container" data-ice="rootContainer">
+
+<header>
+  <a href="./">Home</a>
+  
+  <a href="identifiers.html">Reference</a>
+  <a href="source.html">Source</a>
+  
+  <div class="search-box">
+  <span>
+    <img src="./image/search.png">
+    <span class="search-input-edge"></span><input class="search-input"><span class="search-input-edge"></span>
+  </span>
+    <ul class="search-result"></ul>
+  </div>
+<a style="position:relative; top:3px;" href="https://github.com/sharvit/react-redux-test-utils"><img width="20px" src="./image/github.png"></a></header>
+
+<nav class="navigation" data-ice="nav"><div>
+  <ul>
+    
+  <li data-ice="doc"><span data-ice="kind" class="kind-class">C</span><span data-ice="name"><span><a href="class/src/IntegrationTestHelper.js~IntegrationTestHelper.html">IntegrationTestHelper</a></span></span></li>
+<li data-ice="doc"><span data-ice="kind" class="kind-function">F</span><span data-ice="name"><span><a href="function/index.html#static-function-shallowRenderComponentWithFixtures">shallowRenderComponentWithFixtures</a></span></span></li>
+<li data-ice="doc"><span data-ice="kind" class="kind-function">F</span><span data-ice="name"><span><a href="function/index.html#static-function-testActionSnapshot">testActionSnapshot</a></span></span></li>
+<li data-ice="doc"><span data-ice="kind" class="kind-function">F</span><span data-ice="name"><span><a href="function/index.html#static-function-testActionSnapshotWithFixtures">testActionSnapshotWithFixtures</a></span></span></li>
+<li data-ice="doc"><span data-ice="kind" class="kind-function">F</span><span data-ice="name"><span><a href="function/index.html#static-function-testComponentSnapshotsWithFixtures">testComponentSnapshotsWithFixtures</a></span></span></li>
+<li data-ice="doc"><span data-ice="kind" class="kind-function">F</span><span data-ice="name"><span><a href="function/index.html#static-function-testReducerSnapshotWithFixtures">testReducerSnapshotWithFixtures</a></span></span></li>
+<li data-ice="doc"><span data-ice="kind" class="kind-function">F</span><span data-ice="name"><span><a href="function/index.html#static-function-testSelectorsSnapshotWithFixtures">testSelectorsSnapshotWithFixtures</a></span></span></li>
+<li data-ice="doc"><span data-ice="kind" class="kind-typedef">T</span><span data-ice="name"><span><a href="typedef/index.html#static-typedef-ActionsFixtures">ActionsFixtures</a></span></span></li>
+<li data-ice="doc"><span data-ice="kind" class="kind-typedef">T</span><span data-ice="name"><span><a href="typedef/index.html#static-typedef-ComponentFixtures">ComponentFixtures</a></span></span></li>
+<li data-ice="doc"><span data-ice="kind" class="kind-typedef">T</span><span data-ice="name"><span><a href="typedef/index.html#static-typedef-ComponentFixturesResults">ComponentFixturesResults</a></span></span></li>
+<li data-ice="doc"><span data-ice="kind" class="kind-typedef">T</span><span data-ice="name"><span><a href="typedef/index.html#static-typedef-ReducerFixture">ReducerFixture</a></span></span></li>
+<li data-ice="doc"><span data-ice="kind" class="kind-typedef">T</span><span data-ice="name"><span><a href="typedef/index.html#static-typedef-ReducerFixtures">ReducerFixtures</a></span></span></li>
+</ul>
+</div>
+</nav>
+
+<div class="content" data-ice="content"><h1 data-ice="title">Function</h1>
+<div data-ice="summaries"><table class="summary" data-ice="summary">
+  <thead><tr><td data-ice="title" colspan="3">Static Public Summary</td></tr></thead>
+  <tbody>
+  
+  <tr data-ice="target">
+    <td>
+      <span class="access" data-ice="access">public</span>
+      
+      
+      
+      <span class="override" data-ice="override"></span>
+    </td>
+    <td>
+      <div>
+        <p>
+          
+          
+          
+          <span class="code" data-ice="name"><span><a href="function/index.html#static-function-shallowRenderComponentWithFixtures">shallowRenderComponentWithFixtures</a></span></span><span class="code" data-ice="signature">(Component: <span>ReactComponent</span>, fixtures: <span><a href="typedef/index.html#static-typedef-ComponentFixtures">ComponentFixtures</a></span>): <span><span><a href="typedef/index.html#static-typedef-ComponentFixturesResults">ComponentFixturesResults</a></span><span>[]</span></span></span>
+        </p>
+      </div>
+      <div>
+        
+        
+        <div data-ice="description"><p>Shallow render a component multipile times with fixtures</p>
+</div>
+      </div>
+    </td>
+    <td>
+      
+      <span class="since" data-ice="since">since 0.1.0</span>
+    </td>
+  </tr>
+<tr data-ice="target">
+    <td>
+      <span class="access" data-ice="access">public</span>
+      
+      
+      
+      <span class="override" data-ice="override"></span>
+    </td>
+    <td>
+      <div>
+        <p>
+          
+          <span data-ice="async">async</span>
+          
+          <span class="code" data-ice="name"><span><a href="function/index.html#static-function-testActionSnapshot">testActionSnapshot</a></span></span><span class="code" data-ice="signature">(action: <span><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Function">Function</a></span>): <span><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Promise">Promise</a></span></span>
+        </p>
+      </div>
+      <div>
+        
+        
+        <div data-ice="description"><p>Run an action (sync or async) and except the results to much snapshot</p>
+</div>
+      </div>
+    </td>
+    <td>
+      
+      <span class="since" data-ice="since">since 0.1.0</span>
+    </td>
+  </tr>
+<tr data-ice="target">
+    <td>
+      <span class="access" data-ice="access">public</span>
+      
+      
+      
+      <span class="override" data-ice="override"></span>
+    </td>
+    <td>
+      <div>
+        <p>
+          
+          
+          
+          <span class="code" data-ice="name"><span><a href="function/index.html#static-function-testActionSnapshotWithFixtures">testActionSnapshotWithFixtures</a></span></span><span class="code" data-ice="signature">(fixtures: <span><a href="typedef/index.html#static-typedef-ActionsFixtures">ActionsFixtures</a></span>)</span>
+        </p>
+      </div>
+      <div>
+        
+        
+        <div data-ice="description"><p>Test actions with fixtures and snapshots</p>
+</div>
+      </div>
+    </td>
+    <td>
+      
+      <span class="since" data-ice="since">since 0.1.0</span>
+    </td>
+  </tr>
+<tr data-ice="target">
+    <td>
+      <span class="access" data-ice="access">public</span>
+      
+      
+      
+      <span class="override" data-ice="override"></span>
+    </td>
+    <td>
+      <div>
+        <p>
+          
+          
+          
+          <span class="code" data-ice="name"><span><a href="function/index.html#static-function-testComponentSnapshotsWithFixtures">testComponentSnapshotsWithFixtures</a></span></span><span class="code" data-ice="signature">(Component: <span>ReactComponent</span>, fixtures: <span><a href="typedef/index.html#static-typedef-ComponentFixtures">ComponentFixtures</a></span>)</span>
+        </p>
+      </div>
+      <div>
+        
+        
+        <div data-ice="description"><p>Test a component with fixtures and snapshots</p>
+</div>
+      </div>
+    </td>
+    <td>
+      
+      <span class="since" data-ice="since">since 0.1.0</span>
+    </td>
+  </tr>
+<tr data-ice="target">
+    <td>
+      <span class="access" data-ice="access">public</span>
+      
+      
+      
+      <span class="override" data-ice="override"></span>
+    </td>
+    <td>
+      <div>
+        <p>
+          
+          
+          
+          <span class="code" data-ice="name"><span><a href="function/index.html#static-function-testReducerSnapshotWithFixtures">testReducerSnapshotWithFixtures</a></span></span><span class="code" data-ice="signature">(reducer: <span><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Function">Function</a></span>, fixtures: <span><a href="typedef/index.html#static-typedef-ReducerFixtures">ReducerFixtures</a></span>)</span>
+        </p>
+      </div>
+      <div>
+        
+        
+        <div data-ice="description"><p>Test a reducer with fixtures and snapshots</p>
+</div>
+      </div>
+    </td>
+    <td>
+      
+      <span class="since" data-ice="since">since 0.1.0</span>
+    </td>
+  </tr>
+<tr data-ice="target">
+    <td>
+      <span class="access" data-ice="access">public</span>
+      
+      
+      
+      <span class="override" data-ice="override"></span>
+    </td>
+    <td>
+      <div>
+        <p>
+          
+          
+          
+          <span class="code" data-ice="name"><span><a href="function/index.html#static-function-testSelectorsSnapshotWithFixtures">testSelectorsSnapshotWithFixtures</a></span></span><span class="code" data-ice="signature">(fixtures: <span><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Object">Object</a></span>)</span>
+        </p>
+      </div>
+      <div>
+        
+        
+        <div data-ice="description"><p>Test selectors with fixtures and snapshots</p>
+</div>
+      </div>
+    </td>
+    <td>
+      
+      <span class="since" data-ice="since">since 0.1.0</span>
+    </td>
+  </tr>
+</tbody>
+</table>
+</div>
+<div data-ice="details"><h2 data-ice="title">Static Public </h2>
+
+<div class="detail" data-ice="detail">
+  <h3 data-ice="anchor" id="static-function-shallowRenderComponentWithFixtures">
+    <span class="access" data-ice="access">public</span>
+    
+    
+    
+    
+    
+    <span class="code" data-ice="name">shallowRenderComponentWithFixtures</span><span class="code" data-ice="signature">(Component: <span>ReactComponent</span>, fixtures: <span><a href="typedef/index.html#static-typedef-ComponentFixtures">ComponentFixtures</a></span>): <span><span><a href="typedef/index.html#static-typedef-ComponentFixturesResults">ComponentFixturesResults</a></span><span>[]</span></span></span>
+    <span class="right-info">
+      
+      <span class="since" data-ice="since">since 0.1.0</span>
+      <span data-ice="source"><span><a href="file/src/unit-test-helpers.js.html#lineNumber69">source</a></span></span>
+    </span>
+  </h3>
+
+  <div data-ice="importPath" class="import-path"><pre class="prettyprint"><code data-ice="importPathCode">import {shallowRenderComponentWithFixtures} from &apos;<span><a href="file/src/unit-test-helpers.js.html#lineNumber69">react-redux-test-utils</a></span>&apos;</code></pre></div>
+  
+  
+  <div data-ice="description"><p>Shallow render a component multipile times with fixtures</p>
+</div>
+
+  
+
+  <div data-ice="properties"><div data-ice="properties">
+  <h4 data-ice="title">Params:</h4>
+  <table class="params">
+    <thead>
+    <tr><td>Name</td><td>Type</td><td>Attribute</td><td>Description</td></tr>
+    </thead>
+    <tbody>
+    
+    <tr data-ice="property" data-depth="0">
+      <td data-ice="name" class="code" data-depth="0">Component</td>
+      <td data-ice="type" class="code"><span>ReactComponent</span></td>
+      <td data-ice="appendix"></td>
+      <td data-ice="description"><p>Component to shallow-render</p>
+</td>
+    </tr>
+<tr data-ice="property" data-depth="0">
+      <td data-ice="name" class="code" data-depth="0">fixtures</td>
+      <td data-ice="type" class="code"><span><a href="typedef/index.html#static-typedef-ComponentFixtures">ComponentFixtures</a></span></td>
+      <td data-ice="appendix"></td>
+      <td data-ice="description"><p>Fixtures to render</p>
+</td>
+    </tr>
+</tbody>
+  </table>
+</div>
+</div>
+
+  <div class="return-params" data-ice="returnParams">
+    <h4>Return:</h4>
+    <table>
+      <tbody>
+        <tr>
+          <td class="return-type code" data-ice="returnType"><span><span><a href="typedef/index.html#static-typedef-ComponentFixturesResults">ComponentFixturesResults</a></span><span>[]</span></span></td>
+          <td class="return-desc" data-ice="returnDescription"><p>Shallow rendering results.</p>
+</td>
+        </tr>
+      </tbody>
+    </table>
+    <div data-ice="returnProperties">
+</div>
+  </div>
+
+  
+
+  
+
+  
+
+  
+
+  <div data-ice="example">
+    <h4>Example:</h4>
+    
+  <div class="example-doc" data-ice="exampleDoc">
+      
+      <pre class="prettyprint source-code"><code data-ice="exampleCode">const components = shallowRenderComponentWithFixtures(Button, {
+  &apos;should render a button&apos;: { href: &apos;https://google.com&apos; },
+  &apos;should render a button with icon&apos;: { href: &apos;https://github.com&apos;, icon: &apos;github&apos; },
+});
+
+// results
+[{
+  &apos;should render a button&apos;: ShllowRendered(Button),
+  &apos;should render a button&apos;: ShllowRendered(ButtonWithIcon),
+}]</code></pre>
+    </div>
+</div>
+
+  
+
+  
+  
+</div>
+<div class="detail" data-ice="detail">
+  <h3 data-ice="anchor" id="static-function-testActionSnapshot">
+    <span class="access" data-ice="access">public</span>
+    
+    
+    
+    <span data-ice="async">async</span>
+    
+    <span class="code" data-ice="name">testActionSnapshot</span><span class="code" data-ice="signature">(action: <span><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Function">Function</a></span>): <span><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Promise">Promise</a></span></span>
+    <span class="right-info">
+      
+      <span class="since" data-ice="since">since 0.1.0</span>
+      <span data-ice="source"><span><a href="file/src/unit-test-helpers.js.html#lineNumber113">source</a></span></span>
+    </span>
+  </h3>
+
+  <div data-ice="importPath" class="import-path"><pre class="prettyprint"><code data-ice="importPathCode">import {testActionSnapshot} from &apos;<span><a href="file/src/unit-test-helpers.js.html#lineNumber113">react-redux-test-utils</a></span>&apos;</code></pre></div>
+  
+  
+  <div data-ice="description"><p>Run an action (sync or async) and except the results to much snapshot</p>
+</div>
+
+  
+
+  <div data-ice="properties"><div data-ice="properties">
+  <h4 data-ice="title">Params:</h4>
+  <table class="params">
+    <thead>
+    <tr><td>Name</td><td>Type</td><td>Attribute</td><td>Description</td></tr>
+    </thead>
+    <tbody>
+    
+    <tr data-ice="property" data-depth="0">
+      <td data-ice="name" class="code" data-depth="0">action</td>
+      <td data-ice="type" class="code"><span><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Function">Function</a></span></td>
+      <td data-ice="appendix"></td>
+      <td data-ice="description"><p>Action to run</p>
+</td>
+    </tr>
+</tbody>
+  </table>
+</div>
+</div>
+
+  <div class="return-params" data-ice="returnParams">
+    <h4>Return:</h4>
+    <table>
+      <tbody>
+        <tr>
+          <td class="return-type code" data-ice="returnType"><span><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Promise">Promise</a></span></td>
+          
+        </tr>
+      </tbody>
+    </table>
+    <div data-ice="returnProperties">
+</div>
+  </div>
+
+  
+
+  
+
+  
+
+  
+
+  <div data-ice="example">
+    <h4>Example:</h4>
+    
+  <div class="example-doc" data-ice="exampleDoc">
+      
+      <pre class="prettyprint source-code"><code data-ice="exampleCode">test(&apos;should show modal&apos;, () =&gt; testActionSnapshot(showModal));</code></pre>
+    </div>
+<div class="example-doc" data-ice="exampleDoc">
+      
+      <pre class="prettyprint source-code"><code data-ice="exampleCode">test(&apos;load user&apos;, () =&gt; testActionSnapshot(loadUser));</code></pre>
+    </div>
+</div>
+
+  
+
+  
+  
+</div>
+<div class="detail" data-ice="detail">
+  <h3 data-ice="anchor" id="static-function-testActionSnapshotWithFixtures">
+    <span class="access" data-ice="access">public</span>
+    
+    
+    
+    
+    
+    <span class="code" data-ice="name">testActionSnapshotWithFixtures</span><span class="code" data-ice="signature">(fixtures: <span><a href="typedef/index.html#static-typedef-ActionsFixtures">ActionsFixtures</a></span>)</span>
+    <span class="right-info">
+      
+      <span class="since" data-ice="since">since 0.1.0</span>
+      <span data-ice="source"><span><a href="file/src/unit-test-helpers.js.html#lineNumber167">source</a></span></span>
+    </span>
+  </h3>
+
+  <div data-ice="importPath" class="import-path"><pre class="prettyprint"><code data-ice="importPathCode">import {testActionSnapshotWithFixtures} from &apos;<span><a href="file/src/unit-test-helpers.js.html#lineNumber167">react-redux-test-utils</a></span>&apos;</code></pre></div>
+  
+  
+  <div data-ice="description"><p>Test actions with fixtures and snapshots</p>
+</div>
+
+  
+
+  <div data-ice="properties"><div data-ice="properties">
+  <h4 data-ice="title">Params:</h4>
+  <table class="params">
+    <thead>
+    <tr><td>Name</td><td>Type</td><td>Attribute</td><td>Description</td></tr>
+    </thead>
+    <tbody>
+    
+    <tr data-ice="property" data-depth="0">
+      <td data-ice="name" class="code" data-depth="0">fixtures</td>
+      <td data-ice="type" class="code"><span><a href="typedef/index.html#static-typedef-ActionsFixtures">ActionsFixtures</a></span></td>
+      <td data-ice="appendix"></td>
+      <td data-ice="description"><p>Fixtures to test</p>
+</td>
+    </tr>
+</tbody>
+  </table>
+</div>
+</div>
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  <div data-ice="example">
+    <h4>Example:</h4>
+    
+  <div class="example-doc" data-ice="exampleDoc">
+      
+      <pre class="prettyprint source-code"><code data-ice="exampleCode">describe(&apos;PageActions&apos;, () =&gt; testActionSnapshotWithFixtures({
+  &apos;should show notifications box&apos;: () = showNotificationsBox(),
+});
+
+// results
+describe(&apos;PageActions&apos;, () =&gt; {
+  test(&apos;should show notifications box&apos;, () =&gt; {
+    // run showNotificationsBox() and test results against snapshot
+  });
+});</code></pre>
+    </div>
+<div class="example-doc" data-ice="exampleDoc">
+      
+      <pre class="prettyprint source-code"><code data-ice="exampleCode">describe(&apos;UserActions&apos;, () =&gt; testActionSnapshotWithFixtures({
+  &apos;should login user&apos;: () = login({
+    username: &apos;some-username&apos;,
+    password: &apos;some-password&apos;,
+  }),
+  &apos;should load update user email&apos;: () = updateEmail({
+    username: &apos;some-username&apos;,
+    oldEmail: &apos;some@email.com&apos;,
+    newEmail: &apos;some-other@email.com&apos;,
+  }),
+});
+
+// results
+describe(&apos;UserActions&apos;, () =&gt; {
+  test(&apos;should login user&apos;, () =&gt; {
+    // run login() and test results against snapshot
+  });
+  test(&apos;should load update user email&apos;, () =&gt; {
+    // run updateEmail() and test results against snapshot
+  });
+});</code></pre>
+    </div>
+</div>
+
+  
+
+  
+  
+</div>
+<div class="detail" data-ice="detail">
+  <h3 data-ice="anchor" id="static-function-testComponentSnapshotsWithFixtures">
+    <span class="access" data-ice="access">public</span>
+    
+    
+    
+    
+    
+    <span class="code" data-ice="name">testComponentSnapshotsWithFixtures</span><span class="code" data-ice="signature">(Component: <span>ReactComponent</span>, fixtures: <span><a href="typedef/index.html#static-typedef-ComponentFixtures">ComponentFixtures</a></span>)</span>
+    <span class="right-info">
+      
+      <span class="since" data-ice="since">since 0.1.0</span>
+      <span data-ice="source"><span><a href="file/src/unit-test-helpers.js.html#lineNumber97">source</a></span></span>
+    </span>
+  </h3>
+
+  <div data-ice="importPath" class="import-path"><pre class="prettyprint"><code data-ice="importPathCode">import {testComponentSnapshotsWithFixtures} from &apos;<span><a href="file/src/unit-test-helpers.js.html#lineNumber97">react-redux-test-utils</a></span>&apos;</code></pre></div>
+  
+  
+  <div data-ice="description"><p>Test a component with fixtures and snapshots</p>
+</div>
+
+  
+
+  <div data-ice="properties"><div data-ice="properties">
+  <h4 data-ice="title">Params:</h4>
+  <table class="params">
+    <thead>
+    <tr><td>Name</td><td>Type</td><td>Attribute</td><td>Description</td></tr>
+    </thead>
+    <tbody>
+    
+    <tr data-ice="property" data-depth="0">
+      <td data-ice="name" class="code" data-depth="0">Component</td>
+      <td data-ice="type" class="code"><span>ReactComponent</span></td>
+      <td data-ice="appendix"></td>
+      <td data-ice="description"><p>Component to test</p>
+</td>
+    </tr>
+<tr data-ice="property" data-depth="0">
+      <td data-ice="name" class="code" data-depth="0">fixtures</td>
+      <td data-ice="type" class="code"><span><a href="typedef/index.html#static-typedef-ComponentFixtures">ComponentFixtures</a></span></td>
+      <td data-ice="appendix"></td>
+      <td data-ice="description"><p>Fixtures to test</p>
+</td>
+    </tr>
+</tbody>
+  </table>
+</div>
+</div>
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  <div data-ice="example">
+    <h4>Example:</h4>
+    
+  <div class="example-doc" data-ice="exampleDoc">
+      
+      <pre class="prettyprint source-code"><code data-ice="exampleCode">describe(&apos;Button&apos;, () =&gt; testComponentSnapshotsWithFixtures(Button, {
+  &apos;should render a button&apos;: { href: &apos;https://google.com&apos; },
+  &apos;should render a button with icon&apos;: { href: &apos;https://github.com&apos;, icon: &apos;github&apos; },
+});
+
+// results
+describe(&apos;Button&apos;, () =&gt; {
+  test(&apos;should render a button&apos;, () =&gt; {
+    // renders button and test against snapshot
+  });
+  test(&apos;should render a button with icon&apos;, () =&gt; {
+    // renders button with icon and test against snapshot
+  });
+});</code></pre>
+    </div>
+</div>
+
+  
+
+  
+  
+</div>
+<div class="detail" data-ice="detail">
+  <h3 data-ice="anchor" id="static-function-testReducerSnapshotWithFixtures">
+    <span class="access" data-ice="access">public</span>
+    
+    
+    
+    
+    
+    <span class="code" data-ice="name">testReducerSnapshotWithFixtures</span><span class="code" data-ice="signature">(reducer: <span><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Function">Function</a></span>, fixtures: <span><a href="typedef/index.html#static-typedef-ReducerFixtures">ReducerFixtures</a></span>)</span>
+    <span class="right-info">
+      
+      <span class="since" data-ice="since">since 0.1.0</span>
+      <span data-ice="source"><span><a href="file/src/unit-test-helpers.js.html#lineNumber201">source</a></span></span>
+    </span>
+  </h3>
+
+  <div data-ice="importPath" class="import-path"><pre class="prettyprint"><code data-ice="importPathCode">import {testReducerSnapshotWithFixtures} from &apos;<span><a href="file/src/unit-test-helpers.js.html#lineNumber201">react-redux-test-utils</a></span>&apos;</code></pre></div>
+  
+  
+  <div data-ice="description"><p>Test a reducer with fixtures and snapshots</p>
+</div>
+
+  
+
+  <div data-ice="properties"><div data-ice="properties">
+  <h4 data-ice="title">Params:</h4>
+  <table class="params">
+    <thead>
+    <tr><td>Name</td><td>Type</td><td>Attribute</td><td>Description</td></tr>
+    </thead>
+    <tbody>
+    
+    <tr data-ice="property" data-depth="0">
+      <td data-ice="name" class="code" data-depth="0">reducer</td>
+      <td data-ice="type" class="code"><span><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Function">Function</a></span></td>
+      <td data-ice="appendix"></td>
+      <td data-ice="description"><p>Reducer to test</p>
+</td>
+    </tr>
+<tr data-ice="property" data-depth="0">
+      <td data-ice="name" class="code" data-depth="0">fixtures</td>
+      <td data-ice="type" class="code"><span><a href="typedef/index.html#static-typedef-ReducerFixtures">ReducerFixtures</a></span></td>
+      <td data-ice="appendix"></td>
+      <td data-ice="description"><p>Reducer fixtures</p>
+</td>
+    </tr>
+</tbody>
+  </table>
+</div>
+</div>
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  <div data-ice="example">
+    <h4>Example:</h4>
+    
+  <div class="example-doc" data-ice="exampleDoc">
+      
+      <pre class="prettyprint source-code"><code data-ice="exampleCode">describe(&apos;LoginForm reducer&apos;, () =&gt; testReducerSnapshotWithFixtures(loginReducer, {
+  &apos;it should update username&apos;: {
+    action: {
+      type: LOGIN_FORM_UPDATE_USERNAME,
+      payload: { username: &apos;some-username&apos; }
+    }
+  },
+  &apos;it should update password&apos;: {
+    action: {
+      type: LOGIN_FORM_UPDATE_PASSWORD,
+      payload: { password: &apos;some-password&apos; }
+    }
+  },
+  &apos;it should toggle remember-me&apos;: {
+    state: { rememberMe: false },
+    action: {
+      type: LOGIN_FORM_TOGGLE_REMEMBER_ME,
+    }
+  },
+}));</code></pre>
+    </div>
+</div>
+
+  
+
+  
+  
+</div>
+<div class="detail" data-ice="detail">
+  <h3 data-ice="anchor" id="static-function-testSelectorsSnapshotWithFixtures">
+    <span class="access" data-ice="access">public</span>
+    
+    
+    
+    
+    
+    <span class="code" data-ice="name">testSelectorsSnapshotWithFixtures</span><span class="code" data-ice="signature">(fixtures: <span><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Object">Object</a></span>)</span>
+    <span class="right-info">
+      
+      <span class="since" data-ice="since">since 0.1.0</span>
+      <span data-ice="source"><span><a href="file/src/unit-test-helpers.js.html#lineNumber221">source</a></span></span>
+    </span>
+  </h3>
+
+  <div data-ice="importPath" class="import-path"><pre class="prettyprint"><code data-ice="importPathCode">import {testSelectorsSnapshotWithFixtures} from &apos;<span><a href="file/src/unit-test-helpers.js.html#lineNumber221">react-redux-test-utils</a></span>&apos;</code></pre></div>
+  
+  
+  <div data-ice="description"><p>Test selectors with fixtures and snapshots</p>
+</div>
+
+  
+
+  <div data-ice="properties"><div data-ice="properties">
+  <h4 data-ice="title">Params:</h4>
+  <table class="params">
+    <thead>
+    <tr><td>Name</td><td>Type</td><td>Attribute</td><td>Description</td></tr>
+    </thead>
+    <tbody>
+    
+    <tr data-ice="property" data-depth="0">
+      <td data-ice="name" class="code" data-depth="0">fixtures</td>
+      <td data-ice="type" class="code"><span><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Object">Object</a></span></td>
+      <td data-ice="appendix"></td>
+      <td data-ice="description"><p>key=fixture description value=selector runner function</p>
+</td>
+    </tr>
+</tbody>
+  </table>
+</div>
+</div>
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  <div data-ice="example">
+    <h4>Example:</h4>
+    
+  <div class="example-doc" data-ice="exampleDoc">
+      
+      <pre class="prettyprint source-code"><code data-ice="exampleCode">cost state = { user: { loggedIn: true, firstName: &apos;Eli&apos;, lastName: &apos;Ohana&apos; } };
+
+describe(&apos;UserSelectors&apos;, () =&gt; testSelectorsSnapshotWithFixtures({
+  &apos;should select is-user-logged-in&apos;: selectIsUserLoggedIn(state),
+  &apos;should select user-full-name&apos;: selectUserFullName(state),
+}));</code></pre>
+    </div>
+</div>
+
+  
+
+  
+  
+</div>
+</div>
+</div>
+
+<footer class="footer">
+  Generated by <a href="https://esdoc.org">ESDoc<span data-ice="esdocVersion">(1.1.0)</span><img src="./image/esdoc-logo-mini-black.png"></a>
+</footer>
+
+<script src="script/search_index.js"></script>
+<script src="script/search.js"></script>
+<script src="script/pretty-print.js"></script>
+<script src="script/inherited-summary.js"></script>
+<script src="script/test-summary.js"></script>
+<script src="script/inner-link.js"></script>
+<script src="script/patch-for-local.js"></script>
+</body>
+</html>

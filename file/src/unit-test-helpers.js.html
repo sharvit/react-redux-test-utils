@@ -1,0 +1,289 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <base data-ice="baseUrl" href="../../">
+  <title data-ice="title">src/unit-test-helpers.js | react-redux-test-utils</title>
+  <link type="text/css" rel="stylesheet" href="css/style.css">
+  <link type="text/css" rel="stylesheet" href="css/prettify-tomorrow.css">
+  <script src="script/prettify/prettify.js"></script>
+  <script src="script/manual.js"></script>
+<meta name="description" content="Utils for testing react-redux applications using enzyme and jest snapshots"><meta property="twitter:card" content="summary"><meta property="twitter:title" content="react-redux-test-utils"><meta property="twitter:description" content="Utils for testing react-redux applications using enzyme and jest snapshots"></head>
+<body class="layout-container" data-ice="rootContainer">
+
+<header>
+  <a href="./">Home</a>
+  
+  <a href="identifiers.html">Reference</a>
+  <a href="source.html">Source</a>
+  
+  <div class="search-box">
+  <span>
+    <img src="./image/search.png">
+    <span class="search-input-edge"></span><input class="search-input"><span class="search-input-edge"></span>
+  </span>
+    <ul class="search-result"></ul>
+  </div>
+<a style="position:relative; top:3px;" href="https://github.com/sharvit/react-redux-test-utils"><img width="20px" src="./image/github.png"></a></header>
+
+<nav class="navigation" data-ice="nav"><div>
+  <ul>
+    
+  <li data-ice="doc"><span data-ice="kind" class="kind-class">C</span><span data-ice="name"><span><a href="class/src/IntegrationTestHelper.js~IntegrationTestHelper.html">IntegrationTestHelper</a></span></span></li>
+<li data-ice="doc"><span data-ice="kind" class="kind-function">F</span><span data-ice="name"><span><a href="function/index.html#static-function-shallowRenderComponentWithFixtures">shallowRenderComponentWithFixtures</a></span></span></li>
+<li data-ice="doc"><span data-ice="kind" class="kind-function">F</span><span data-ice="name"><span><a href="function/index.html#static-function-testActionSnapshot">testActionSnapshot</a></span></span></li>
+<li data-ice="doc"><span data-ice="kind" class="kind-function">F</span><span data-ice="name"><span><a href="function/index.html#static-function-testActionSnapshotWithFixtures">testActionSnapshotWithFixtures</a></span></span></li>
+<li data-ice="doc"><span data-ice="kind" class="kind-function">F</span><span data-ice="name"><span><a href="function/index.html#static-function-testComponentSnapshotsWithFixtures">testComponentSnapshotsWithFixtures</a></span></span></li>
+<li data-ice="doc"><span data-ice="kind" class="kind-function">F</span><span data-ice="name"><span><a href="function/index.html#static-function-testReducerSnapshotWithFixtures">testReducerSnapshotWithFixtures</a></span></span></li>
+<li data-ice="doc"><span data-ice="kind" class="kind-function">F</span><span data-ice="name"><span><a href="function/index.html#static-function-testSelectorsSnapshotWithFixtures">testSelectorsSnapshotWithFixtures</a></span></span></li>
+<li data-ice="doc"><span data-ice="kind" class="kind-typedef">T</span><span data-ice="name"><span><a href="typedef/index.html#static-typedef-ActionsFixtures">ActionsFixtures</a></span></span></li>
+<li data-ice="doc"><span data-ice="kind" class="kind-typedef">T</span><span data-ice="name"><span><a href="typedef/index.html#static-typedef-ComponentFixtures">ComponentFixtures</a></span></span></li>
+<li data-ice="doc"><span data-ice="kind" class="kind-typedef">T</span><span data-ice="name"><span><a href="typedef/index.html#static-typedef-ComponentFixturesResults">ComponentFixturesResults</a></span></span></li>
+<li data-ice="doc"><span data-ice="kind" class="kind-typedef">T</span><span data-ice="name"><span><a href="typedef/index.html#static-typedef-ReducerFixture">ReducerFixture</a></span></span></li>
+<li data-ice="doc"><span data-ice="kind" class="kind-typedef">T</span><span data-ice="name"><span><a href="typedef/index.html#static-typedef-ReducerFixtures">ReducerFixtures</a></span></span></li>
+</ul>
+</div>
+</nav>
+
+<div class="content" data-ice="content"><h1 data-ice="title">src/unit-test-helpers.js</h1>
+<pre class="source-code line-number raw-source-code"><code class="prettyprint linenums" data-ice="content">import React from &apos;react&apos;;
+import { shallow } from &apos;enzyme&apos;;
+import toJson from &apos;enzyme-to-json&apos;;
+
+/**
+ * Fixtures for a component
+ * where the key is the description
+ * and the value is the component props.
+ *
+ * @typedef  {Object} ComponentFixtures
+ * @property {Object} * props object.
+ */
+
+/**
+ * Fixtures for a reducer
+ * where the key is the description
+ * and the value is a ReducerFixture
+ *
+ * @typedef  {Object} ReducerFixtures
+ * @property {ReducerFixture} * props object.
+ */
+
+/**
+ * Fixture for a reducer.
+ *
+ * @typedef  {Object} ReducerFixture
+ * @property {Object} state  Current state.
+ * @property {Object} action Action object with type and payload.
+ */
+
+/**
+ * Fixtures for a component
+ * where the key is the description
+ * and the value is the component props.
+ *
+ * @typedef  {Object} ComponentFixturesResults
+ * @property {string} description Fixture description.
+ * @property {EnzymeComponent} component enzyme shallow rendered component.
+ */
+
+/**
+ * Fixtures for actions
+ * where the key is the description
+ * and the value is the action.
+ *
+ * @typedef  {Object} ActionsFixtures
+ * @property {Object} * Action to run.
+ */
+
+/**
+ * Shallow render a component multipile times with fixtures
+ * @since 0.1.0
+ * @param  {ReactComponent}    Component Component to shallow-render
+ * @param  {ComponentFixtures} fixtures  Fixtures to render
+ * @return {ComponentFixturesResults[]}  Shallow rendering results.
+ *
+ * @example
+ * const components = shallowRenderComponentWithFixtures(Button, {
+ *   &apos;should render a button&apos;: { href: &apos;https://google.com&apos; },
+ *   &apos;should render a button with icon&apos;: { href: &apos;https://github.com&apos;, icon: &apos;github&apos; },
+ * });
+ *
+ * // results
+ * [{
+ *   &apos;should render a button&apos;: ShllowRendered(Button),
+ *   &apos;should render a button&apos;: ShllowRendered(ButtonWithIcon),
+ * }]
+ */
+export const shallowRenderComponentWithFixtures = (Component, fixtures) =&gt;
+  Object.entries(fixtures).map(([description, props]) =&gt; ({
+    description,
+    component: shallow(&lt;Component {...props} /&gt;),
+  }));
+
+/**
+ * Test a component with fixtures and snapshots
+ * @since 0.1.0
+ * @param  {ReactComponent}    Component Component to test
+ * @param  {ComponentFixtures} fixtures  Fixtures to test
+ *
+ * @example
+ * describe(&apos;Button&apos;, () =&gt; testComponentSnapshotsWithFixtures(Button, {
+ *   &apos;should render a button&apos;: { href: &apos;https://google.com&apos; },
+ *   &apos;should render a button with icon&apos;: { href: &apos;https://github.com&apos;, icon: &apos;github&apos; },
+ * });
+ *
+ * // results
+ * describe(&apos;Button&apos;, () =&gt; {
+ *   test(&apos;should render a button&apos;, () =&gt; {
+ *     // renders button and test against snapshot
+ *   });
+ *   test(&apos;should render a button with icon&apos;, () =&gt; {
+ *     // renders button with icon and test against snapshot
+ *   });
+ * });
+ */
+export const testComponentSnapshotsWithFixtures = (Component, fixtures) =&gt;
+  shallowRenderComponentWithFixtures(Component, fixtures).forEach(
+    ({ description, component }) =&gt;
+      it(description, () =&gt; expect(toJson(component)).toMatchSnapshot())
+  );
+
+/**
+ * Run an action (sync or async) and except the results to much snapshot
+ * @since 0.1.0
+ * @param  {Function} action Action to run
+ * @return {Promise}
+ * @example
+ * test(&apos;should show modal&apos;, () =&gt; testActionSnapshot(showModal));
+ * @example
+ * test(&apos;load user&apos;, () =&gt; testActionSnapshot(loadUser));
+ */
+export const testActionSnapshot = async action =&gt; {
+  const actionResults = action();
+
+  // if it&apos;s an async action
+  if (typeof actionResults === &apos;function&apos;) {
+    const dispatch = jest.fn();
+    await actionResults(dispatch);
+
+    expect(dispatch.mock.calls).toMatchSnapshot();
+  } else {
+    expect(actionResults).toMatchSnapshot();
+  }
+};
+
+/**
+ * Test actions with fixtures and snapshots
+ * @since 0.1.0
+ * @param {ActionsFixtures} fixtures Fixtures to test
+ *
+ * @example
+ * describe(&apos;PageActions&apos;, () =&gt; testActionSnapshotWithFixtures({
+ *   &apos;should show notifications box&apos;: () = showNotificationsBox(),
+ * });
+ *
+ * // results
+ * describe(&apos;PageActions&apos;, () =&gt; {
+ *   test(&apos;should show notifications box&apos;, () =&gt; {
+ *     // run showNotificationsBox() and test results against snapshot
+ *   });
+ * });
+ *
+ * @example
+ * describe(&apos;UserActions&apos;, () =&gt; testActionSnapshotWithFixtures({
+ *   &apos;should login user&apos;: () = login({
+ *     username: &apos;some-username&apos;,
+ *     password: &apos;some-password&apos;,
+ *   }),
+ *   &apos;should load update user email&apos;: () = updateEmail({
+ *     username: &apos;some-username&apos;,
+ *     oldEmail: &apos;some@email.com&apos;,
+ *     newEmail: &apos;some-other@email.com&apos;,
+ *   }),
+ * });
+ *
+ * // results
+ * describe(&apos;UserActions&apos;, () =&gt; {
+ *   test(&apos;should login user&apos;, () =&gt; {
+ *     // run login() and test results against snapshot
+ *   });
+ *   test(&apos;should load update user email&apos;, () =&gt; {
+ *     // run updateEmail() and test results against snapshot
+ *   });
+ * });
+ */
+export const testActionSnapshotWithFixtures = fixtures =&gt;
+  Object.entries(fixtures).forEach(([description, runAction]) =&gt;
+    it(description, () =&gt; testActionSnapshot(runAction))
+  );
+
+/**
+ * Test a reducer with fixtures and snapshots
+ * @since 0.1.0
+ * @param  {Function} reducer Reducer to test
+ * @param  {ReducerFixtures} fixtures Reducer fixtures
+ *
+ * @example
+ * describe(&apos;LoginForm reducer&apos;, () =&gt; testReducerSnapshotWithFixtures(loginReducer, {
+ *   &apos;it should update username&apos;: {
+ *     action: {
+ *       type: LOGIN_FORM_UPDATE_USERNAME,
+ *       payload: { username: &apos;some-username&apos; }
+ *     }
+ *   },
+ *   &apos;it should update password&apos;: {
+ *     action: {
+ *       type: LOGIN_FORM_UPDATE_PASSWORD,
+ *       payload: { password: &apos;some-password&apos; }
+ *     }
+ *   },
+ *   &apos;it should toggle remember-me&apos;: {
+ *     state: { rememberMe: false },
+ *     action: {
+ *       type: LOGIN_FORM_TOGGLE_REMEMBER_ME,
+ *     }
+ *   },
+ * }));
+ *
+ */
+export const testReducerSnapshotWithFixtures = (reducer, fixtures) =&gt; {
+  const reduce = ({ state, action = {} } = {}) =&gt; reducer(state, action);
+  Object.entries(fixtures).forEach(([description, action]) =&gt;
+    it(description, () =&gt; expect(reduce(action)).toMatchSnapshot())
+  );
+};
+
+/**
+ * Test selectors with fixtures and snapshots
+ * @since 0.1.0
+ * @param  {Object} fixtures  key=fixture description value=selector runner function
+ *
+ * @example
+ * cost state = { user: { loggedIn: true, firstName: &apos;Eli&apos;, lastName: &apos;Ohana&apos; } };
+ *
+ * describe(&apos;UserSelectors&apos;, () =&gt; testSelectorsSnapshotWithFixtures({
+ *   &apos;should select is-user-logged-in&apos;: selectIsUserLoggedIn(state),
+ *   &apos;should select user-full-name&apos;: selectUserFullName(state),
+ * }));
+ */
+export const testSelectorsSnapshotWithFixtures = fixtures =&gt;
+  Object.entries(fixtures).forEach(([description, selectorRunner]) =&gt;
+    it(description, () =&gt; expect(selectorRunner()).toMatchSnapshot())
+  );
+</code></pre>
+
+</div>
+
+<footer class="footer">
+  Generated by <a href="https://esdoc.org">ESDoc<span data-ice="esdocVersion">(1.1.0)</span><img src="./image/esdoc-logo-mini-black.png"></a>
+</footer>
+
+<script src="script/search_index.js"></script>
+<script src="script/search.js"></script>
+<script src="script/pretty-print.js"></script>
+<script src="script/inherited-summary.js"></script>
+<script src="script/test-summary.js"></script>
+<script src="script/inner-link.js"></script>
+<script src="script/patch-for-local.js"></script>
+</body>
+</html>
