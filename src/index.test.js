@@ -1,3 +1,0 @@
-test('output', () => {
-  expect('🐰').toBe('🐰');
-});

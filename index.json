@@ -1,0 +1,1385 @@
+[
+  {
+    "__docId__": 1,
+    "kind": "external",
+    "name": "Infinity",
+    "externalLink": "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Infinity",
+    "memberof": "src/.external-ecmascript.js",
+    "static": true,
+    "longname": "src/.external-ecmascript.js~Infinity",
+    "access": "public",
+    "description": "",
+    "builtinExternal": true
+  },
+  {
+    "__docId__": 2,
+    "kind": "external",
+    "name": "NaN",
+    "externalLink": "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/NaN",
+    "memberof": "src/.external-ecmascript.js",
+    "static": true,
+    "longname": "src/.external-ecmascript.js~NaN",
+    "access": "public",
+    "description": "",
+    "builtinExternal": true
+  },
+  {
+    "__docId__": 3,
+    "kind": "external",
+    "name": "undefined",
+    "externalLink": "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/undefined",
+    "memberof": "src/.external-ecmascript.js",
+    "static": true,
+    "longname": "src/.external-ecmascript.js~undefined",
+    "access": "public",
+    "description": "",
+    "builtinExternal": true
+  },
+  {
+    "__docId__": 4,
+    "kind": "external",
+    "name": "null",
+    "externalLink": "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/null",
+    "memberof": "src/.external-ecmascript.js",
+    "static": true,
+    "longname": "src/.external-ecmascript.js~null",
+    "access": "public",
+    "description": "",
+    "builtinExternal": true
+  },
+  {
+    "__docId__": 5,
+    "kind": "external",
+    "name": "Object",
+    "externalLink": "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Object",
+    "memberof": "src/.external-ecmascript.js",
+    "static": true,
+    "longname": "src/.external-ecmascript.js~Object",
+    "access": "public",
+    "description": "",
+    "builtinExternal": true
+  },
+  {
+    "__docId__": 6,
+    "kind": "external",
+    "name": "object",
+    "externalLink": "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Object",
+    "memberof": "src/.external-ecmascript.js",
+    "static": true,
+    "longname": "src/.external-ecmascript.js~object",
+    "access": "public",
+    "description": "",
+    "builtinExternal": true
+  },
+  {
+    "__docId__": 7,
+    "kind": "external",
+    "name": "Function",
+    "externalLink": "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Function",
+    "memberof": "src/.external-ecmascript.js",
+    "static": true,
+    "longname": "src/.external-ecmascript.js~Function",
+    "access": "public",
+    "description": "",
+    "builtinExternal": true
+  },
+  {
+    "__docId__": 8,
+    "kind": "external",
+    "name": "function",
+    "externalLink": "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Function",
+    "memberof": "src/.external-ecmascript.js",
+    "static": true,
+    "longname": "src/.external-ecmascript.js~function",
+    "access": "public",
+    "description": "",
+    "builtinExternal": true
+  },
+  {
+    "__docId__": 9,
+    "kind": "external",
+    "name": "Boolean",
+    "externalLink": "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Boolean",
+    "memberof": "src/.external-ecmascript.js",
+    "static": true,
+    "longname": "src/.external-ecmascript.js~Boolean",
+    "access": "public",
+    "description": "",
+    "builtinExternal": true
+  },
+  {
+    "__docId__": 10,
+    "kind": "external",
+    "name": "boolean",
+    "externalLink": "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Boolean",
+    "memberof": "src/.external-ecmascript.js",
+    "static": true,
+    "longname": "src/.external-ecmascript.js~boolean",
+    "access": "public",
+    "description": "",
+    "builtinExternal": true
+  },
+  {
+    "__docId__": 11,
+    "kind": "external",
+    "name": "Symbol",
+    "externalLink": "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Symbol",
+    "memberof": "src/.external-ecmascript.js",
+    "static": true,
+    "longname": "src/.external-ecmascript.js~Symbol",
+    "access": "public",
+    "description": "",
+    "builtinExternal": true
+  },
+  {
+    "__docId__": 12,
+    "kind": "external",
+    "name": "Error",
+    "externalLink": "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Error",
+    "memberof": "src/.external-ecmascript.js",
+    "static": true,
+    "longname": "src/.external-ecmascript.js~Error",
+    "access": "public",
+    "description": "",
+    "builtinExternal": true
+  },
+  {
+    "__docId__": 13,
+    "kind": "external",
+    "name": "EvalError",
+    "externalLink": "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/EvalError",
+    "memberof": "src/.external-ecmascript.js",
+    "static": true,
+    "longname": "src/.external-ecmascript.js~EvalError",
+    "access": "public",
+    "description": "",
+    "builtinExternal": true
+  },
+  {
+    "__docId__": 14,
+    "kind": "external",
+    "name": "InternalError",
+    "externalLink": "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/InternalError",
+    "memberof": "src/.external-ecmascript.js",
+    "static": true,
+    "longname": "src/.external-ecmascript.js~InternalError",
+    "access": "public",
+    "description": "",
+    "builtinExternal": true
+  },
+  {
+    "__docId__": 15,
+    "kind": "external",
+    "name": "RangeError",
+    "externalLink": "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/RangeError",
+    "memberof": "src/.external-ecmascript.js",
+    "static": true,
+    "longname": "src/.external-ecmascript.js~RangeError",
+    "access": "public",
+    "description": "",
+    "builtinExternal": true
+  },
+  {
+    "__docId__": 16,
+    "kind": "external",
+    "name": "ReferenceError",
+    "externalLink": "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/ReferenceError",
+    "memberof": "src/.external-ecmascript.js",
+    "static": true,
+    "longname": "src/.external-ecmascript.js~ReferenceError",
+    "access": "public",
+    "description": "",
+    "builtinExternal": true
+  },
+  {
+    "__docId__": 17,
+    "kind": "external",
+    "name": "SyntaxError",
+    "externalLink": "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/SyntaxError",
+    "memberof": "src/.external-ecmascript.js",
+    "static": true,
+    "longname": "src/.external-ecmascript.js~SyntaxError",
+    "access": "public",
+    "description": "",
+    "builtinExternal": true
+  },
+  {
+    "__docId__": 18,
+    "kind": "external",
+    "name": "TypeError",
+    "externalLink": "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/TypeError",
+    "memberof": "src/.external-ecmascript.js",
+    "static": true,
+    "longname": "src/.external-ecmascript.js~TypeError",
+    "access": "public",
+    "description": "",
+    "builtinExternal": true
+  },
+  {
+    "__docId__": 19,
+    "kind": "external",
+    "name": "URIError",
+    "externalLink": "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/URIError",
+    "memberof": "src/.external-ecmascript.js",
+    "static": true,
+    "longname": "src/.external-ecmascript.js~URIError",
+    "access": "public",
+    "description": "",
+    "builtinExternal": true
+  },
+  {
+    "__docId__": 20,
+    "kind": "external",
+    "name": "Number",
+    "externalLink": "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Number",
+    "memberof": "src/.external-ecmascript.js",
+    "static": true,
+    "longname": "src/.external-ecmascript.js~Number",
+    "access": "public",
+    "description": "",
+    "builtinExternal": true
+  },
+  {
+    "__docId__": 21,
+    "kind": "external",
+    "name": "number",
+    "externalLink": "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Number",
+    "memberof": "src/.external-ecmascript.js",
+    "static": true,
+    "longname": "src/.external-ecmascript.js~number",
+    "access": "public",
+    "description": "",
+    "builtinExternal": true
+  },
+  {
+    "__docId__": 22,
+    "kind": "external",
+    "name": "Date",
+    "externalLink": "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Date",
+    "memberof": "src/.external-ecmascript.js",
+    "static": true,
+    "longname": "src/.external-ecmascript.js~Date",
+    "access": "public",
+    "description": "",
+    "builtinExternal": true
+  },
+  {
+    "__docId__": 23,
+    "kind": "external",
+    "name": "String",
+    "externalLink": "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/String",
+    "memberof": "src/.external-ecmascript.js",
+    "static": true,
+    "longname": "src/.external-ecmascript.js~String",
+    "access": "public",
+    "description": "",
+    "builtinExternal": true
+  },
+  {
+    "__docId__": 24,
+    "kind": "external",
+    "name": "string",
+    "externalLink": "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/String",
+    "memberof": "src/.external-ecmascript.js",
+    "static": true,
+    "longname": "src/.external-ecmascript.js~string",
+    "access": "public",
+    "description": "",
+    "builtinExternal": true
+  },
+  {
+    "__docId__": 25,
+    "kind": "external",
+    "name": "RegExp",
+    "externalLink": "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/RegExp",
+    "memberof": "src/.external-ecmascript.js",
+    "static": true,
+    "longname": "src/.external-ecmascript.js~RegExp",
+    "access": "public",
+    "description": "",
+    "builtinExternal": true
+  },
+  {
+    "__docId__": 26,
+    "kind": "external",
+    "name": "Array",
+    "externalLink": "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array",
+    "memberof": "src/.external-ecmascript.js",
+    "static": true,
+    "longname": "src/.external-ecmascript.js~Array",
+    "access": "public",
+    "description": "",
+    "builtinExternal": true
+  },
+  {
+    "__docId__": 27,
+    "kind": "external",
+    "name": "Int8Array",
+    "externalLink": "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Int8Array",
+    "memberof": "src/.external-ecmascript.js",
+    "static": true,
+    "longname": "src/.external-ecmascript.js~Int8Array",
+    "access": "public",
+    "description": "",
+    "builtinExternal": true
+  },
+  {
+    "__docId__": 28,
+    "kind": "external",
+    "name": "Uint8Array",
+    "externalLink": "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Uint8Array",
+    "memberof": "src/.external-ecmascript.js",
+    "static": true,
+    "longname": "src/.external-ecmascript.js~Uint8Array",
+    "access": "public",
+    "description": "",
+    "builtinExternal": true
+  },
+  {
+    "__docId__": 29,
+    "kind": "external",
+    "name": "Uint8ClampedArray",
+    "externalLink": "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Uint8ClampedArray",
+    "memberof": "src/.external-ecmascript.js",
+    "static": true,
+    "longname": "src/.external-ecmascript.js~Uint8ClampedArray",
+    "access": "public",
+    "description": "",
+    "builtinExternal": true
+  },
+  {
+    "__docId__": 30,
+    "kind": "external",
+    "name": "Int16Array",
+    "externalLink": "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Int16Array",
+    "memberof": "src/.external-ecmascript.js",
+    "static": true,
+    "longname": "src/.external-ecmascript.js~Int16Array",
+    "access": "public",
+    "description": "",
+    "builtinExternal": true
+  },
+  {
+    "__docId__": 31,
+    "kind": "external",
+    "name": "Uint16Array",
+    "externalLink": "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Uint16Array",
+    "memberof": "src/.external-ecmascript.js",
+    "static": true,
+    "longname": "src/.external-ecmascript.js~Uint16Array",
+    "access": "public",
+    "description": "",
+    "builtinExternal": true
+  },
+  {
+    "__docId__": 32,
+    "kind": "external",
+    "name": "Int32Array",
+    "externalLink": "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Int32Array",
+    "memberof": "src/.external-ecmascript.js",
+    "static": true,
+    "longname": "src/.external-ecmascript.js~Int32Array",
+    "access": "public",
+    "description": "",
+    "builtinExternal": true
+  },
+  {
+    "__docId__": 33,
+    "kind": "external",
+    "name": "Uint32Array",
+    "externalLink": "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Uint32Array",
+    "memberof": "src/.external-ecmascript.js",
+    "static": true,
+    "longname": "src/.external-ecmascript.js~Uint32Array",
+    "access": "public",
+    "description": "",
+    "builtinExternal": true
+  },
+  {
+    "__docId__": 34,
+    "kind": "external",
+    "name": "Float32Array",
+    "externalLink": "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Float32Array",
+    "memberof": "src/.external-ecmascript.js",
+    "static": true,
+    "longname": "src/.external-ecmascript.js~Float32Array",
+    "access": "public",
+    "description": "",
+    "builtinExternal": true
+  },
+  {
+    "__docId__": 35,
+    "kind": "external",
+    "name": "Float64Array",
+    "externalLink": "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Float64Array",
+    "memberof": "src/.external-ecmascript.js",
+    "static": true,
+    "longname": "src/.external-ecmascript.js~Float64Array",
+    "access": "public",
+    "description": "",
+    "builtinExternal": true
+  },
+  {
+    "__docId__": 36,
+    "kind": "external",
+    "name": "Map",
+    "externalLink": "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Map",
+    "memberof": "src/.external-ecmascript.js",
+    "static": true,
+    "longname": "src/.external-ecmascript.js~Map",
+    "access": "public",
+    "description": "",
+    "builtinExternal": true
+  },
+  {
+    "__docId__": 37,
+    "kind": "external",
+    "name": "Set",
+    "externalLink": "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Set",
+    "memberof": "src/.external-ecmascript.js",
+    "static": true,
+    "longname": "src/.external-ecmascript.js~Set",
+    "access": "public",
+    "description": "",
+    "builtinExternal": true
+  },
+  {
+    "__docId__": 38,
+    "kind": "external",
+    "name": "WeakMap",
+    "externalLink": "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/WeakMap",
+    "memberof": "src/.external-ecmascript.js",
+    "static": true,
+    "longname": "src/.external-ecmascript.js~WeakMap",
+    "access": "public",
+    "description": "",
+    "builtinExternal": true
+  },
+  {
+    "__docId__": 39,
+    "kind": "external",
+    "name": "WeakSet",
+    "externalLink": "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/WeakSet",
+    "memberof": "src/.external-ecmascript.js",
+    "static": true,
+    "longname": "src/.external-ecmascript.js~WeakSet",
+    "access": "public",
+    "description": "",
+    "builtinExternal": true
+  },
+  {
+    "__docId__": 40,
+    "kind": "external",
+    "name": "ArrayBuffer",
+    "externalLink": "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/ArrayBuffer",
+    "memberof": "src/.external-ecmascript.js",
+    "static": true,
+    "longname": "src/.external-ecmascript.js~ArrayBuffer",
+    "access": "public",
+    "description": "",
+    "builtinExternal": true
+  },
+  {
+    "__docId__": 41,
+    "kind": "external",
+    "name": "DataView",
+    "externalLink": "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/DataView",
+    "memberof": "src/.external-ecmascript.js",
+    "static": true,
+    "longname": "src/.external-ecmascript.js~DataView",
+    "access": "public",
+    "description": "",
+    "builtinExternal": true
+  },
+  {
+    "__docId__": 42,
+    "kind": "external",
+    "name": "JSON",
+    "externalLink": "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/JSON",
+    "memberof": "src/.external-ecmascript.js",
+    "static": true,
+    "longname": "src/.external-ecmascript.js~JSON",
+    "access": "public",
+    "description": "",
+    "builtinExternal": true
+  },
+  {
+    "__docId__": 43,
+    "kind": "external",
+    "name": "Promise",
+    "externalLink": "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Promise",
+    "memberof": "src/.external-ecmascript.js",
+    "static": true,
+    "longname": "src/.external-ecmascript.js~Promise",
+    "access": "public",
+    "description": "",
+    "builtinExternal": true
+  },
+  {
+    "__docId__": 44,
+    "kind": "external",
+    "name": "Generator",
+    "externalLink": "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Generator",
+    "memberof": "src/.external-ecmascript.js",
+    "static": true,
+    "longname": "src/.external-ecmascript.js~Generator",
+    "access": "public",
+    "description": "",
+    "builtinExternal": true
+  },
+  {
+    "__docId__": 45,
+    "kind": "external",
+    "name": "GeneratorFunction",
+    "externalLink": "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/GeneratorFunction",
+    "memberof": "src/.external-ecmascript.js",
+    "static": true,
+    "longname": "src/.external-ecmascript.js~GeneratorFunction",
+    "access": "public",
+    "description": "",
+    "builtinExternal": true
+  },
+  {
+    "__docId__": 46,
+    "kind": "external",
+    "name": "Reflect",
+    "externalLink": "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Reflect",
+    "memberof": "src/.external-ecmascript.js",
+    "static": true,
+    "longname": "src/.external-ecmascript.js~Reflect",
+    "access": "public",
+    "description": "",
+    "builtinExternal": true
+  },
+  {
+    "__docId__": 47,
+    "kind": "external",
+    "name": "Proxy",
+    "externalLink": "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Proxy",
+    "memberof": "src/.external-ecmascript.js",
+    "static": true,
+    "longname": "src/.external-ecmascript.js~Proxy",
+    "access": "public",
+    "description": "",
+    "builtinExternal": true
+  },
+  {
+    "__docId__": 48,
+    "kind": "file",
+    "name": "src/IntegrationTestHelper.js",
+    "content": "import React from 'react';\nimport { mount } from 'enzyme';\nimport { Provider } from 'react-redux';\nimport { applyMiddleware, combineReducers, createStore } from 'redux';\nimport thunk from 'redux-thunk';\n\n/**\n * Integration test helper\n * @since 0.1.0\n */\nexport class IntegrationTestHelper {\n  /**\n   * Wait for all the promises in the test to get resolved\n   * @return {Promise}\n   */\n  static flushAllPromises() {\n    return new Promise(resolve => setImmediate(resolve));\n  }\n  /**\n   * Create an integration-test-helper\n   * @param {ReduxReducers} reducers reducers to apply\n   */\n  constructor(reducers) {\n    this.dispatchSpy = jest.fn(() => ({}));\n    const reducerSpy = (state, action) => this.dispatchSpy(action);\n    const emptyStore = applyMiddleware(thunk)(createStore);\n    const combinedReducers = combineReducers({\n      reducerSpy,\n      ...reducers,\n    });\n\n    this.store = emptyStore(combinedReducers);\n  }\n  /**\n   * Mount a component with the store\n   * @param  {ReactNode} component A react node to mount\n   * @return {EnzymeMount}         Mounted component with enzyme and redux store\n   */\n  mount(component) {\n    return mount(<Provider store={this.store}>{component}</Provider>);\n  }\n  /**\n   * Get the current state object\n   * @return {Object} Current state\n   */\n  getState() {\n    const state = this.store.getState();\n    delete state.reducerSpy;\n    return state;\n  }\n  /**\n   * Get a list with all dispach calls\n   * @return {Array} Dispach calls\n   */\n  getDispatchCalls() {\n    const isRelevantCall = call =>\n      call.filter(({ type }) => type.startsWith('@@redux')).length === 0;\n\n    return this.dispatchSpy.mock.calls.filter(isRelevantCall);\n  }\n  /**\n   * Get the last dispach call\n   * @return {Array} dispach call\n   */\n  getLastDispachCall() {\n    return this.getDispatchCalls().slice(-1);\n  }\n  /**\n   * Take a store snapshot\n   * @param  {string} description Snapshoot description\n   */\n  takeStoreSnapshot(description) {\n    expect(this.getState()).toMatchSnapshot(description);\n  }\n  /**\n   * Take a snapshot of all the actions\n   * @param  {string} description Snapshoot description\n   */\n  takeActionsSnapshot(description = 'Integration test actions') {\n    expect(this.getDispatchCalls()).toMatchSnapshot(description);\n  }\n  /**\n   * Take a snapshot of the last called action\n   * @param  {string} description Snapshoot description\n   */\n  takeLastActionSnapshot(description) {\n    expect(this.getLastDispachCall()).toMatchSnapshot(description);\n  }\n  /**\n   * Take a snapshot of the store together with the last action call\n   * @param  {string} description Snapshot description\n   */\n  takeStoreAndLastActionSnapshot(description) {\n    const state = this.getState();\n    const action = this.getLastDispachCall();\n\n    expect({ state, action }).toMatchSnapshot(description);\n  }\n}\n",
+    "static": true,
+    "longname": "/home/travis/build/sharvit/react-redux-test-utils/src/IntegrationTestHelper.js",
+    "access": "public",
+    "description": null,
+    "lineNumber": 1
+  },
+  {
+    "__docId__": 49,
+    "kind": "class",
+    "name": "IntegrationTestHelper",
+    "memberof": "src/IntegrationTestHelper.js",
+    "static": true,
+    "longname": "src/IntegrationTestHelper.js~IntegrationTestHelper",
+    "access": "public",
+    "export": true,
+    "importPath": "react-redux-test-utils",
+    "importStyle": "{IntegrationTestHelper}",
+    "description": "Integration test helper",
+    "lineNumber": 11,
+    "since": "0.1.0",
+    "interface": false
+  },
+  {
+    "__docId__": 50,
+    "kind": "method",
+    "name": "flushAllPromises",
+    "memberof": "src/IntegrationTestHelper.js~IntegrationTestHelper",
+    "generator": false,
+    "async": false,
+    "static": true,
+    "longname": "src/IntegrationTestHelper.js~IntegrationTestHelper.flushAllPromises",
+    "access": "public",
+    "description": "Wait for all the promises in the test to get resolved",
+    "lineNumber": 16,
+    "return": {
+      "nullable": null,
+      "types": [
+        "Promise"
+      ],
+      "spread": false,
+      "description": ""
+    }
+  },
+  {
+    "__docId__": 51,
+    "kind": "constructor",
+    "name": "constructor",
+    "memberof": "src/IntegrationTestHelper.js~IntegrationTestHelper",
+    "generator": false,
+    "async": false,
+    "static": false,
+    "longname": "src/IntegrationTestHelper.js~IntegrationTestHelper#constructor",
+    "access": "public",
+    "description": "Create an integration-test-helper",
+    "lineNumber": 23,
+    "params": [
+      {
+        "nullable": null,
+        "types": [
+          "ReduxReducers"
+        ],
+        "spread": false,
+        "optional": false,
+        "name": "reducers",
+        "description": "reducers to apply"
+      }
+    ]
+  },
+  {
+    "__docId__": 52,
+    "kind": "member",
+    "name": "dispatchSpy",
+    "memberof": "src/IntegrationTestHelper.js~IntegrationTestHelper",
+    "static": false,
+    "longname": "src/IntegrationTestHelper.js~IntegrationTestHelper#dispatchSpy",
+    "access": "public",
+    "description": null,
+    "lineNumber": 24,
+    "undocument": true,
+    "ignore": true
+  },
+  {
+    "__docId__": 53,
+    "kind": "member",
+    "name": "store",
+    "memberof": "src/IntegrationTestHelper.js~IntegrationTestHelper",
+    "static": false,
+    "longname": "src/IntegrationTestHelper.js~IntegrationTestHelper#store",
+    "access": "public",
+    "description": null,
+    "lineNumber": 32,
+    "undocument": true,
+    "ignore": true
+  },
+  {
+    "__docId__": 54,
+    "kind": "method",
+    "name": "mount",
+    "memberof": "src/IntegrationTestHelper.js~IntegrationTestHelper",
+    "generator": false,
+    "async": false,
+    "static": false,
+    "longname": "src/IntegrationTestHelper.js~IntegrationTestHelper#mount",
+    "access": "public",
+    "description": "Mount a component with the store",
+    "lineNumber": 39,
+    "params": [
+      {
+        "nullable": null,
+        "types": [
+          "ReactNode"
+        ],
+        "spread": false,
+        "optional": false,
+        "name": "component",
+        "description": "A react node to mount"
+      }
+    ],
+    "return": {
+      "nullable": null,
+      "types": [
+        "EnzymeMount"
+      ],
+      "spread": false,
+      "description": "Mounted component with enzyme and redux store"
+    }
+  },
+  {
+    "__docId__": 55,
+    "kind": "method",
+    "name": "getState",
+    "memberof": "src/IntegrationTestHelper.js~IntegrationTestHelper",
+    "generator": false,
+    "async": false,
+    "static": false,
+    "longname": "src/IntegrationTestHelper.js~IntegrationTestHelper#getState",
+    "access": "public",
+    "description": "Get the current state object",
+    "lineNumber": 46,
+    "return": {
+      "nullable": null,
+      "types": [
+        "Object"
+      ],
+      "spread": false,
+      "description": "Current state"
+    }
+  },
+  {
+    "__docId__": 56,
+    "kind": "method",
+    "name": "getDispatchCalls",
+    "memberof": "src/IntegrationTestHelper.js~IntegrationTestHelper",
+    "generator": false,
+    "async": false,
+    "static": false,
+    "longname": "src/IntegrationTestHelper.js~IntegrationTestHelper#getDispatchCalls",
+    "access": "public",
+    "description": "Get a list with all dispach calls",
+    "lineNumber": 55,
+    "return": {
+      "nullable": null,
+      "types": [
+        "Array"
+      ],
+      "spread": false,
+      "description": "Dispach calls"
+    }
+  },
+  {
+    "__docId__": 57,
+    "kind": "method",
+    "name": "getLastDispachCall",
+    "memberof": "src/IntegrationTestHelper.js~IntegrationTestHelper",
+    "generator": false,
+    "async": false,
+    "static": false,
+    "longname": "src/IntegrationTestHelper.js~IntegrationTestHelper#getLastDispachCall",
+    "access": "public",
+    "description": "Get the last dispach call",
+    "lineNumber": 65,
+    "return": {
+      "nullable": null,
+      "types": [
+        "Array"
+      ],
+      "spread": false,
+      "description": "dispach call"
+    }
+  },
+  {
+    "__docId__": 58,
+    "kind": "method",
+    "name": "takeStoreSnapshot",
+    "memberof": "src/IntegrationTestHelper.js~IntegrationTestHelper",
+    "generator": false,
+    "async": false,
+    "static": false,
+    "longname": "src/IntegrationTestHelper.js~IntegrationTestHelper#takeStoreSnapshot",
+    "access": "public",
+    "description": "Take a store snapshot",
+    "lineNumber": 72,
+    "params": [
+      {
+        "nullable": null,
+        "types": [
+          "string"
+        ],
+        "spread": false,
+        "optional": false,
+        "name": "description",
+        "description": "Snapshoot description"
+      }
+    ]
+  },
+  {
+    "__docId__": 59,
+    "kind": "method",
+    "name": "takeActionsSnapshot",
+    "memberof": "src/IntegrationTestHelper.js~IntegrationTestHelper",
+    "generator": false,
+    "async": false,
+    "static": false,
+    "longname": "src/IntegrationTestHelper.js~IntegrationTestHelper#takeActionsSnapshot",
+    "access": "public",
+    "description": "Take a snapshot of all the actions",
+    "lineNumber": 79,
+    "params": [
+      {
+        "nullable": null,
+        "types": [
+          "string"
+        ],
+        "spread": false,
+        "optional": false,
+        "name": "description",
+        "description": "Snapshoot description"
+      }
+    ]
+  },
+  {
+    "__docId__": 60,
+    "kind": "method",
+    "name": "takeLastActionSnapshot",
+    "memberof": "src/IntegrationTestHelper.js~IntegrationTestHelper",
+    "generator": false,
+    "async": false,
+    "static": false,
+    "longname": "src/IntegrationTestHelper.js~IntegrationTestHelper#takeLastActionSnapshot",
+    "access": "public",
+    "description": "Take a snapshot of the last called action",
+    "lineNumber": 86,
+    "params": [
+      {
+        "nullable": null,
+        "types": [
+          "string"
+        ],
+        "spread": false,
+        "optional": false,
+        "name": "description",
+        "description": "Snapshoot description"
+      }
+    ]
+  },
+  {
+    "__docId__": 61,
+    "kind": "method",
+    "name": "takeStoreAndLastActionSnapshot",
+    "memberof": "src/IntegrationTestHelper.js~IntegrationTestHelper",
+    "generator": false,
+    "async": false,
+    "static": false,
+    "longname": "src/IntegrationTestHelper.js~IntegrationTestHelper#takeStoreAndLastActionSnapshot",
+    "access": "public",
+    "description": "Take a snapshot of the store together with the last action call",
+    "lineNumber": 93,
+    "params": [
+      {
+        "nullable": null,
+        "types": [
+          "string"
+        ],
+        "spread": false,
+        "optional": false,
+        "name": "description",
+        "description": "Snapshot description"
+      }
+    ]
+  },
+  {
+    "__docId__": 62,
+    "kind": "file",
+    "name": "src/index.js",
+    "content": "export * from './unit-test-helpers';\nexport * from './IntegrationTestHelper';\n",
+    "static": true,
+    "longname": "/home/travis/build/sharvit/react-redux-test-utils/src/index.js",
+    "access": "public",
+    "description": null,
+    "lineNumber": 1
+  },
+  {
+    "__docId__": 63,
+    "kind": "file",
+    "name": "src/unit-test-helpers.js",
+    "content": "import React from 'react';\nimport { shallow } from 'enzyme';\nimport toJson from 'enzyme-to-json';\n\n/**\n * Fixtures for a component\n * where the key is the description\n * and the value is the component props.\n *\n * @typedef  {Object} ComponentFixtures\n * @property {Object} * props object.\n */\n\n/**\n * Fixtures for a reducer\n * where the key is the description\n * and the value is a ReducerFixture\n *\n * @typedef  {Object} ReducerFixtures\n * @property {ReducerFixture} * props object.\n */\n\n/**\n * Fixture for a reducer.\n *\n * @typedef  {Object} ReducerFixture\n * @property {Object} state  Current state.\n * @property {Object} action Action object with type and payload.\n */\n\n/**\n * Fixtures for a component\n * where the key is the description\n * and the value is the component props.\n *\n * @typedef  {Object} ComponentFixturesResults\n * @property {string} description Fixture description.\n * @property {EnzymeComponent} component enzyme shallow rendered component.\n */\n\n/**\n * Fixtures for actions\n * where the key is the description\n * and the value is the action.\n *\n * @typedef  {Object} ActionsFixtures\n * @property {Object} * Action to run.\n */\n\n/**\n * Shallow render a component multipile times with fixtures\n * @since 0.1.0\n * @param  {ReactComponent}    Component Component to shallow-render\n * @param  {ComponentFixtures} fixtures  Fixtures to render\n * @return {ComponentFixturesResults[]}  Shallow rendering results.\n *\n * @example\n * const components = shallowRenderComponentWithFixtures(Button, {\n *   'should render a button': { href: 'https://google.com' },\n *   'should render a button with icon': { href: 'https://github.com', icon: 'github' },\n * });\n *\n * // results\n * [{\n *   'should render a button': ShllowRendered(Button),\n *   'should render a button': ShllowRendered(ButtonWithIcon),\n * }]\n */\nexport const shallowRenderComponentWithFixtures = (Component, fixtures) =>\n  Object.entries(fixtures).map(([description, props]) => ({\n    description,\n    component: shallow(<Component {...props} />),\n  }));\n\n/**\n * Test a component with fixtures and snapshots\n * @since 0.1.0\n * @param  {ReactComponent}    Component Component to test\n * @param  {ComponentFixtures} fixtures  Fixtures to test\n *\n * @example\n * describe('Button', () => testComponentSnapshotsWithFixtures(Button, {\n *   'should render a button': { href: 'https://google.com' },\n *   'should render a button with icon': { href: 'https://github.com', icon: 'github' },\n * });\n *\n * // results\n * describe('Button', () => {\n *   test('should render a button', () => {\n *     // renders button and test against snapshot\n *   });\n *   test('should render a button with icon', () => {\n *     // renders button with icon and test against snapshot\n *   });\n * });\n */\nexport const testComponentSnapshotsWithFixtures = (Component, fixtures) =>\n  shallowRenderComponentWithFixtures(Component, fixtures).forEach(\n    ({ description, component }) =>\n      it(description, () => expect(toJson(component)).toMatchSnapshot())\n  );\n\n/**\n * Run an action (sync or async) and except the results to much snapshot\n * @since 0.1.0\n * @param  {Function} action Action to run\n * @return {Promise}\n * @example\n * test('should show modal', () => testActionSnapshot(showModal));\n * @example\n * test('load user', () => testActionSnapshot(loadUser));\n */\nexport const testActionSnapshot = async action => {\n  const actionResults = action();\n\n  // if it's an async action\n  if (typeof actionResults === 'function') {\n    const dispatch = jest.fn();\n    await actionResults(dispatch);\n\n    expect(dispatch.mock.calls).toMatchSnapshot();\n  } else {\n    expect(actionResults).toMatchSnapshot();\n  }\n};\n\n/**\n * Test actions with fixtures and snapshots\n * @since 0.1.0\n * @param {ActionsFixtures} fixtures Fixtures to test\n *\n * @example\n * describe('PageActions', () => testActionSnapshotWithFixtures({\n *   'should show notifications box': () = showNotificationsBox(),\n * });\n *\n * // results\n * describe('PageActions', () => {\n *   test('should show notifications box', () => {\n *     // run showNotificationsBox() and test results against snapshot\n *   });\n * });\n *\n * @example\n * describe('UserActions', () => testActionSnapshotWithFixtures({\n *   'should login user': () = login({\n *     username: 'some-username',\n *     password: 'some-password',\n *   }),\n *   'should load update user email': () = updateEmail({\n *     username: 'some-username',\n *     oldEmail: 'some@email.com',\n *     newEmail: 'some-other@email.com',\n *   }),\n * });\n *\n * // results\n * describe('UserActions', () => {\n *   test('should login user', () => {\n *     // run login() and test results against snapshot\n *   });\n *   test('should load update user email', () => {\n *     // run updateEmail() and test results against snapshot\n *   });\n * });\n */\nexport const testActionSnapshotWithFixtures = fixtures =>\n  Object.entries(fixtures).forEach(([description, runAction]) =>\n    it(description, () => testActionSnapshot(runAction))\n  );\n\n/**\n * Test a reducer with fixtures and snapshots\n * @since 0.1.0\n * @param  {Function} reducer Reducer to test\n * @param  {ReducerFixtures} fixtures Reducer fixtures\n *\n * @example\n * describe('LoginForm reducer', () => testReducerSnapshotWithFixtures(loginReducer, {\n *   'it should update username': {\n *     action: {\n *       type: LOGIN_FORM_UPDATE_USERNAME,\n *       payload: { username: 'some-username' }\n *     }\n *   },\n *   'it should update password': {\n *     action: {\n *       type: LOGIN_FORM_UPDATE_PASSWORD,\n *       payload: { password: 'some-password' }\n *     }\n *   },\n *   'it should toggle remember-me': {\n *     state: { rememberMe: false },\n *     action: {\n *       type: LOGIN_FORM_TOGGLE_REMEMBER_ME,\n *     }\n *   },\n * }));\n *\n */\nexport const testReducerSnapshotWithFixtures = (reducer, fixtures) => {\n  const reduce = ({ state, action = {} } = {}) => reducer(state, action);\n  Object.entries(fixtures).forEach(([description, action]) =>\n    it(description, () => expect(reduce(action)).toMatchSnapshot())\n  );\n};\n\n/**\n * Test selectors with fixtures and snapshots\n * @since 0.1.0\n * @param  {Object} fixtures  key=fixture description value=selector runner function\n *\n * @example\n * cost state = { user: { loggedIn: true, firstName: 'Eli', lastName: 'Ohana' } };\n *\n * describe('UserSelectors', () => testSelectorsSnapshotWithFixtures({\n *   'should select is-user-logged-in': selectIsUserLoggedIn(state),\n *   'should select user-full-name': selectUserFullName(state),\n * }));\n */\nexport const testSelectorsSnapshotWithFixtures = fixtures =>\n  Object.entries(fixtures).forEach(([description, selectorRunner]) =>\n    it(description, () => expect(selectorRunner()).toMatchSnapshot())\n  );\n",
+    "static": true,
+    "longname": "/home/travis/build/sharvit/react-redux-test-utils/src/unit-test-helpers.js",
+    "access": "public",
+    "description": null,
+    "lineNumber": 1
+  },
+  {
+    "__docId__": 64,
+    "kind": "typedef",
+    "name": "ComponentFixtures",
+    "memberof": "src/unit-test-helpers.js",
+    "static": true,
+    "longname": "src/unit-test-helpers.js~ComponentFixtures",
+    "access": "public",
+    "description": "Fixtures for a component\nwhere the key is the description\nand the value is the component props.",
+    "properties": [
+      {
+        "nullable": null,
+        "types": [
+          "Object"
+        ],
+        "spread": false,
+        "optional": false,
+        "name": "*",
+        "description": "props object."
+      }
+    ],
+    "type": {
+      "types": [
+        "Object"
+      ],
+      "optional": false,
+      "name": "ComponentFixtures"
+    }
+  },
+  {
+    "__docId__": 65,
+    "kind": "typedef",
+    "name": "ReducerFixtures",
+    "memberof": "src/unit-test-helpers.js",
+    "static": true,
+    "longname": "src/unit-test-helpers.js~ReducerFixtures",
+    "access": "public",
+    "description": "Fixtures for a reducer\nwhere the key is the description\nand the value is a ReducerFixture",
+    "properties": [
+      {
+        "nullable": null,
+        "types": [
+          "ReducerFixture"
+        ],
+        "spread": false,
+        "optional": false,
+        "name": "*",
+        "description": "props object."
+      }
+    ],
+    "type": {
+      "types": [
+        "Object"
+      ],
+      "optional": false,
+      "name": "ReducerFixtures"
+    }
+  },
+  {
+    "__docId__": 66,
+    "kind": "typedef",
+    "name": "ReducerFixture",
+    "memberof": "src/unit-test-helpers.js",
+    "static": true,
+    "longname": "src/unit-test-helpers.js~ReducerFixture",
+    "access": "public",
+    "description": "Fixture for a reducer.",
+    "properties": [
+      {
+        "nullable": null,
+        "types": [
+          "Object"
+        ],
+        "spread": false,
+        "optional": false,
+        "name": "state",
+        "description": "Current state."
+      },
+      {
+        "nullable": null,
+        "types": [
+          "Object"
+        ],
+        "spread": false,
+        "optional": false,
+        "name": "action",
+        "description": "Action object with type and payload."
+      }
+    ],
+    "type": {
+      "types": [
+        "Object"
+      ],
+      "optional": false,
+      "name": "ReducerFixture"
+    }
+  },
+  {
+    "__docId__": 67,
+    "kind": "typedef",
+    "name": "ComponentFixturesResults",
+    "memberof": "src/unit-test-helpers.js",
+    "static": true,
+    "longname": "src/unit-test-helpers.js~ComponentFixturesResults",
+    "access": "public",
+    "description": "Fixtures for a component\nwhere the key is the description\nand the value is the component props.",
+    "properties": [
+      {
+        "nullable": null,
+        "types": [
+          "string"
+        ],
+        "spread": false,
+        "optional": false,
+        "name": "description",
+        "description": "Fixture description."
+      },
+      {
+        "nullable": null,
+        "types": [
+          "EnzymeComponent"
+        ],
+        "spread": false,
+        "optional": false,
+        "name": "component",
+        "description": "enzyme shallow rendered component."
+      }
+    ],
+    "type": {
+      "types": [
+        "Object"
+      ],
+      "optional": false,
+      "name": "ComponentFixturesResults"
+    }
+  },
+  {
+    "__docId__": 68,
+    "kind": "typedef",
+    "name": "ActionsFixtures",
+    "memberof": "src/unit-test-helpers.js",
+    "static": true,
+    "longname": "src/unit-test-helpers.js~ActionsFixtures",
+    "access": "public",
+    "description": "Fixtures for actions\nwhere the key is the description\nand the value is the action.",
+    "properties": [
+      {
+        "nullable": null,
+        "types": [
+          "Object"
+        ],
+        "spread": false,
+        "optional": false,
+        "name": "*",
+        "description": "Action to run."
+      }
+    ],
+    "type": {
+      "types": [
+        "Object"
+      ],
+      "optional": false,
+      "name": "ActionsFixtures"
+    }
+  },
+  {
+    "__docId__": 69,
+    "kind": "function",
+    "name": "shallowRenderComponentWithFixtures",
+    "memberof": "src/unit-test-helpers.js",
+    "generator": false,
+    "async": false,
+    "static": true,
+    "longname": "src/unit-test-helpers.js~shallowRenderComponentWithFixtures",
+    "access": "public",
+    "export": true,
+    "importPath": "react-redux-test-utils",
+    "importStyle": "{shallowRenderComponentWithFixtures}",
+    "description": "Shallow render a component multipile times with fixtures",
+    "examples": [
+      "const components = shallowRenderComponentWithFixtures(Button, {\n  'should render a button': { href: 'https://google.com' },\n  'should render a button with icon': { href: 'https://github.com', icon: 'github' },\n});\n\n// results\n[{\n  'should render a button': ShllowRendered(Button),\n  'should render a button': ShllowRendered(ButtonWithIcon),\n}]"
+    ],
+    "lineNumber": 69,
+    "since": "0.1.0",
+    "params": [
+      {
+        "nullable": null,
+        "types": [
+          "ReactComponent"
+        ],
+        "spread": false,
+        "optional": false,
+        "name": "Component",
+        "description": "Component to shallow-render"
+      },
+      {
+        "nullable": null,
+        "types": [
+          "ComponentFixtures"
+        ],
+        "spread": false,
+        "optional": false,
+        "name": "fixtures",
+        "description": "Fixtures to render"
+      }
+    ],
+    "return": {
+      "nullable": null,
+      "types": [
+        "ComponentFixturesResults[]"
+      ],
+      "spread": false,
+      "description": "Shallow rendering results."
+    }
+  },
+  {
+    "__docId__": 70,
+    "kind": "function",
+    "name": "testComponentSnapshotsWithFixtures",
+    "memberof": "src/unit-test-helpers.js",
+    "generator": false,
+    "async": false,
+    "static": true,
+    "longname": "src/unit-test-helpers.js~testComponentSnapshotsWithFixtures",
+    "access": "public",
+    "export": true,
+    "importPath": "react-redux-test-utils",
+    "importStyle": "{testComponentSnapshotsWithFixtures}",
+    "description": "Test a component with fixtures and snapshots",
+    "examples": [
+      "describe('Button', () => testComponentSnapshotsWithFixtures(Button, {\n  'should render a button': { href: 'https://google.com' },\n  'should render a button with icon': { href: 'https://github.com', icon: 'github' },\n});\n\n// results\ndescribe('Button', () => {\n  test('should render a button', () => {\n    // renders button and test against snapshot\n  });\n  test('should render a button with icon', () => {\n    // renders button with icon and test against snapshot\n  });\n});"
+    ],
+    "lineNumber": 97,
+    "since": "0.1.0",
+    "params": [
+      {
+        "nullable": null,
+        "types": [
+          "ReactComponent"
+        ],
+        "spread": false,
+        "optional": false,
+        "name": "Component",
+        "description": "Component to test"
+      },
+      {
+        "nullable": null,
+        "types": [
+          "ComponentFixtures"
+        ],
+        "spread": false,
+        "optional": false,
+        "name": "fixtures",
+        "description": "Fixtures to test"
+      }
+    ]
+  },
+  {
+    "__docId__": 71,
+    "kind": "function",
+    "name": "testActionSnapshot",
+    "memberof": "src/unit-test-helpers.js",
+    "generator": false,
+    "async": true,
+    "static": true,
+    "longname": "src/unit-test-helpers.js~testActionSnapshot",
+    "access": "public",
+    "export": true,
+    "importPath": "react-redux-test-utils",
+    "importStyle": "{testActionSnapshot}",
+    "description": "Run an action (sync or async) and except the results to much snapshot",
+    "examples": [
+      "test('should show modal', () => testActionSnapshot(showModal));",
+      "test('load user', () => testActionSnapshot(loadUser));"
+    ],
+    "lineNumber": 113,
+    "since": "0.1.0",
+    "params": [
+      {
+        "nullable": null,
+        "types": [
+          "Function"
+        ],
+        "spread": false,
+        "optional": false,
+        "name": "action",
+        "description": "Action to run"
+      }
+    ],
+    "return": {
+      "nullable": null,
+      "types": [
+        "Promise"
+      ],
+      "spread": false,
+      "description": ""
+    }
+  },
+  {
+    "__docId__": 72,
+    "kind": "function",
+    "name": "testActionSnapshotWithFixtures",
+    "memberof": "src/unit-test-helpers.js",
+    "generator": false,
+    "async": false,
+    "static": true,
+    "longname": "src/unit-test-helpers.js~testActionSnapshotWithFixtures",
+    "access": "public",
+    "export": true,
+    "importPath": "react-redux-test-utils",
+    "importStyle": "{testActionSnapshotWithFixtures}",
+    "description": "Test actions with fixtures and snapshots",
+    "examples": [
+      "describe('PageActions', () => testActionSnapshotWithFixtures({\n  'should show notifications box': () = showNotificationsBox(),\n});\n\n// results\ndescribe('PageActions', () => {\n  test('should show notifications box', () => {\n    // run showNotificationsBox() and test results against snapshot\n  });\n});",
+      "describe('UserActions', () => testActionSnapshotWithFixtures({\n  'should login user': () = login({\n    username: 'some-username',\n    password: 'some-password',\n  }),\n  'should load update user email': () = updateEmail({\n    username: 'some-username',\n    oldEmail: 'some@email.com',\n    newEmail: 'some-other@email.com',\n  }),\n});\n\n// results\ndescribe('UserActions', () => {\n  test('should login user', () => {\n    // run login() and test results against snapshot\n  });\n  test('should load update user email', () => {\n    // run updateEmail() and test results against snapshot\n  });\n});"
+    ],
+    "lineNumber": 167,
+    "since": "0.1.0",
+    "params": [
+      {
+        "nullable": null,
+        "types": [
+          "ActionsFixtures"
+        ],
+        "spread": false,
+        "optional": false,
+        "name": "fixtures",
+        "description": "Fixtures to test"
+      }
+    ]
+  },
+  {
+    "__docId__": 73,
+    "kind": "function",
+    "name": "testReducerSnapshotWithFixtures",
+    "memberof": "src/unit-test-helpers.js",
+    "generator": false,
+    "async": false,
+    "static": true,
+    "longname": "src/unit-test-helpers.js~testReducerSnapshotWithFixtures",
+    "access": "public",
+    "export": true,
+    "importPath": "react-redux-test-utils",
+    "importStyle": "{testReducerSnapshotWithFixtures}",
+    "description": "Test a reducer with fixtures and snapshots",
+    "examples": [
+      "describe('LoginForm reducer', () => testReducerSnapshotWithFixtures(loginReducer, {\n  'it should update username': {\n    action: {\n      type: LOGIN_FORM_UPDATE_USERNAME,\n      payload: { username: 'some-username' }\n    }\n  },\n  'it should update password': {\n    action: {\n      type: LOGIN_FORM_UPDATE_PASSWORD,\n      payload: { password: 'some-password' }\n    }\n  },\n  'it should toggle remember-me': {\n    state: { rememberMe: false },\n    action: {\n      type: LOGIN_FORM_TOGGLE_REMEMBER_ME,\n    }\n  },\n}));"
+    ],
+    "lineNumber": 201,
+    "since": "0.1.0",
+    "params": [
+      {
+        "nullable": null,
+        "types": [
+          "Function"
+        ],
+        "spread": false,
+        "optional": false,
+        "name": "reducer",
+        "description": "Reducer to test"
+      },
+      {
+        "nullable": null,
+        "types": [
+          "ReducerFixtures"
+        ],
+        "spread": false,
+        "optional": false,
+        "name": "fixtures",
+        "description": "Reducer fixtures"
+      }
+    ]
+  },
+  {
+    "__docId__": 74,
+    "kind": "function",
+    "name": "testSelectorsSnapshotWithFixtures",
+    "memberof": "src/unit-test-helpers.js",
+    "generator": false,
+    "async": false,
+    "static": true,
+    "longname": "src/unit-test-helpers.js~testSelectorsSnapshotWithFixtures",
+    "access": "public",
+    "export": true,
+    "importPath": "react-redux-test-utils",
+    "importStyle": "{testSelectorsSnapshotWithFixtures}",
+    "description": "Test selectors with fixtures and snapshots",
+    "examples": [
+      "cost state = { user: { loggedIn: true, firstName: 'Eli', lastName: 'Ohana' } };\n\ndescribe('UserSelectors', () => testSelectorsSnapshotWithFixtures({\n  'should select is-user-logged-in': selectIsUserLoggedIn(state),\n  'should select user-full-name': selectUserFullName(state),\n}));"
+    ],
+    "lineNumber": 221,
+    "since": "0.1.0",
+    "params": [
+      {
+        "nullable": null,
+        "types": [
+          "Object"
+        ],
+        "spread": false,
+        "optional": false,
+        "name": "fixtures",
+        "description": "key=fixture description value=selector runner function"
+      }
+    ]
+  },
+  {
+    "kind": "index",
+    "content": "",
+    "longname": "/home/travis/build/sharvit/react-redux-test-utils/README.md",
+    "name": "./README.md",
+    "static": true,
+    "access": "public"
+  },
+  {
+    "kind": "packageJSON",
+    "content": "{\n  \"name\": \"react-redux-test-utils\",\n  \"version\": \"0.0.0-semantic-release\",\n  \"description\": \"Utils for testing react-redux applications using enzyme and jest snapshots\",\n  \"license\": \"MIT\",\n  \"repository\": \"https://github.com/sharvit/react-redux-test-utils\",\n  \"author\": {\n    \"name\": \"Avi Sharvit\",\n    \"email\": \"sharvita@gmail.com\",\n    \"url\": \"https://sharvit.github.io\"\n  },\n  \"engines\": {\n    \"node\": \">=8\"\n  },\n  \"scripts\": {\n    \"prebuild\": \"rimraf dist\",\n    \"build\": \"babel src --out-dir dist --ignore **/*.test.js\",\n    \"build:docs\": \"esdoc\",\n    \"build:docs:dev\": \"yarn build:docs && yarn build:docs:open && yarn build:docs:watch\",\n    \"build:docs:open\": \"opener ./htmldocs/index.html\",\n    \"build:docs:watch\": \"npm-watch build:docs\",\n    \"deploy:docs\": \"gh-pages -d htmldocs\",\n    \"test:watch\": \"jest --watch\",\n    \"test\": \"jest --coverage\",\n    \"coveralls\": \"cat ./coverage/lcov.info | ./node_modules/coveralls/bin/coveralls.js\",\n    \"lint\": \"eslint ./src\",\n    \"lint:commit\": \"commitlint -e\",\n    \"lint:commit-travis\": \"commitlint-travis\",\n    \"commit\": \"git-cz\",\n    \"semantic-release\": \"semantic-release\"\n  },\n  \"main\": \"dist/index.js\",\n  \"files\": [\n    \"dist\"\n  ],\n  \"peerDependencies\": {\n    \"enzyme\": \"3.x\",\n    \"enzyme-to-json\": \"3.x\",\n    \"react\": \"16.x\",\n    \"react-redux\": \"6.x\",\n    \"redux\": \"4.x\",\n    \"redux-thunk\": \"2.x\"\n  },\n  \"watch\": {\n    \"build:docs\": {\n      \"patterns\": [\n        \"src\",\n        \"docs\",\n        \"readme.md\",\n        \".esdoc.js\"\n      ],\n      \"extensions\": \"js,md,json\",\n      \"ignore\": \"src/.external-ecmascript.js\"\n    }\n  },\n  \"dependencies\": {},\n  \"optionalDependencies\": {\n\n  },\n  \"devDependencies\": {\n    \"@babel/cli\": \"^7.2.0\",\n    \"@babel/core\": \"^7.2.0\",\n    \"@babel/preset-env\": \"^7.2.0\",\n    \"@babel/preset-react\": \"^7.0.0\",\n    \"@commitlint/cli\": \"^7.2.1\",\n    \"@commitlint/config-conventional\": \"^7.1.2\",\n    \"@commitlint/travis-cli\": \"^7.2.1\",\n    \"babel-core\": \"^7.0.0-bridge.0\",\n    \"babel-eslint\": \"^10.0.1\",\n    \"babel-jest\": \"^23.6.0\",\n    \"babel-plugin-add-module-exports\": \"^1.0.0\",\n    \"commitlint-config-cz\": \"^0.11.0\",\n    \"coveralls\": \"^3.0.2\",\n    \"cz-conventional-changelog\": \"2.1.0\",\n    \"enzyme\": \"^3.8.0\",\n    \"enzyme-to-json\": \"^3.3.5\",\n    \"esdoc\": \"^1.1.0\",\n    \"esdoc-ecmascript-proposal-plugin\": \"^1.0.0\",\n    \"esdoc-importpath-plugin\": \"^1.0.2\",\n    \"esdoc-jsx-plugin\": \"^1.0.0\",\n    \"esdoc-replace-plugin\": \"^1.0.0\",\n    \"esdoc-standard-plugin\": \"^1.0.0\",\n    \"eslint\": \"^5.10.0\",\n    \"eslint-config-prettier\": \"^3.3.0\",\n    \"eslint-config-standard\": \"^12.0.0\",\n    \"eslint-plugin-import\": \"^2.14.0\",\n    \"eslint-plugin-node\": \"^8.0.0\",\n    \"eslint-plugin-prettier\": \"^3.0.0\",\n    \"eslint-plugin-promise\": \"^4.0.1\",\n    \"eslint-plugin-react\": \"^7.11.1\",\n    \"eslint-plugin-standard\": \"^4.0.0\",\n    \"jest\": \"^23.6.0\",\n    \"npm-watch\": \"^0.5.0\",\n    \"opener\": \"^1.5.1\",\n    \"prettier\": \"^1.15.3\",\n    \"react\": \"^16.6.3\",\n    \"react-redux\": \"^6.0.0\",\n    \"redux\": \"^4.0.1\",\n    \"redux-thunk\": \"^2.3.0\",\n    \"rimraf\": \"^2.6.2\"\n  },\n  \"optionalDependencies\": {\n    \"semantic-release\": \"^15.13.1\"\n  },\n  \"jest\": {\n    \"testEnvironment\": \"node\",\n    \"transform\": {\n      \"^.+\\\\.js$\": \"babel-jest\"\n    },\n    \"collectCoverageFrom\": [\n      \"src/**/*.js\"\n    ]\n  },\n  \"config\": {\n    \"commitizen\": {\n      \"path\": \"./node_modules/cz-conventional-changelog\"\n    }\n  },\n  \"keywords\": []\n}\n",
+    "longname": "/home/travis/build/sharvit/react-redux-test-utils/package.json",
+    "name": "package.json",
+    "static": true,
+    "access": "public"
+  },
+  {
+    "kind": "manualIndex",
+    "globalIndex": true,
+    "content": "# react-redux-test-utils\n\n> Utils for testing react-redux applications using enzyme and jest snapshots\n\n[![Package Version](https://img.shields.io/npm/v/react-redux-test-utils.svg?style=flat-square)](https://www.npmjs.com/package/react-redux-test-utils)\n[![semantic-release](https://img.shields.io/badge/%20%20%F0%9F%93%A6%F0%9F%9A%80-semantic--release-e10079.svg)](https://github.com/semantic-release/semantic-release)\n[![Downloads Status](https://img.shields.io/npm/dm/react-redux-test-utils.svg?style=flat-square)](https://npm-stat.com/charts.html?package=react-redux-test-utils&from=2016-04-01)\n[![Build Status: Linux](https://img.shields.io/travis/sharvit/react-redux-test-utils/master.svg?style=flat-square)](https://travis-ci.org/sharvit/react-redux-test-utils)\n[![Coverage Status](https://coveralls.io/repos/github/sharvit/react-redux-test-utils/badge.svg?branch=master)](https://coveralls.io/github/sharvit/react-redux-test-utils?branch=master)\n[![PRs Welcome](https://img.shields.io/badge/PRs-welcome-brightgreen.svg?style=flat-square)](http://makeapullrequest.com)\n[![dependencies Status](https://david-dm.org/sharvit/react-redux-test-utils/status.svg)](https://david-dm.org/sharvit/react-redux-test-utils)\n[![devDependencies Status](https://david-dm.org/sharvit/react-redux-test-utils/dev-status.svg)](https://david-dm.org/sharvit/react-redux-test-utils?type=dev)\n[![code style: prettier](https://img.shields.io/badge/code_style-prettier-ff69b4.svg?style=flat-square)](https://github.com/prettier/prettier)\n[![MIT License](https://img.shields.io/npm/l/stack-overflow-copy-paste.svg?style=flat-square)](http://opensource.org/licenses/MIT)\n\n## Why\n\n// TODO\n\n## Installation\n\n```sh\nnpm install --save react-redux-test-utils\n```\n\n## Usage\n\n```js\nconst reactReduxTestUtils = require('react-redux-test-utils');\n\nreactReduxTestUtils('some text');\n//=> some text\n```\n\n## Related\n\n// TODO\n\n## License\n\nMIT &copy; [Avi Sharvit](https://sharvit.github.io)\n",
+    "longname": "/home/travis/build/sharvit/react-redux-test-utils/readme.md",
+    "name": "./readme.md",
+    "static": true,
+    "access": "public"
+  },
+  {
+    "kind": "manual",
+    "longname": "/home/travis/build/sharvit/react-redux-test-utils/docs/manage-your-code-folder-structure.md",
+    "name": "./docs/manage-your-code-folder-structure.md",
+    "content": "# Manage you code folder structure\n\nBefore we can start unit testing our components,\nwe need to adopt an aproach when we exports 2 versions of the same component,\none connected to redux and one unconnected.\n\nWith this approach, we will manage our code folder structure by domain level and we will create small independent and connected mini-packages.\nWe will write integration-testing with full redux-flow for our connected component/min-package, and unit-testing for unconnected components, actions, reducers, selectors, helpers and co...\n\n## Folder tree\n\n```\nsrc\n├── components\n│   └── UserProfile\n│       ├── index.js // integration-file/connected-component\n│       ├── UserProfile.js // main component\n│       ├── UserProfileActions.js\n│       ├── UserProfileConstants.js\n│       ├── UserProfileReducer.js\n│       ├── UserProfileSelectors.js\n│       ├── __tests__ // test files\n│       │   ├── integration.test.js // integration-test\n│       │   ├── UserProfile.test.js\n│       │   ├── UserProfileActions.test.js\n│       │   ├── UserProfileReducer.test.js\n│       │   └── UserProfileSelectors.test.js\n│       └── components // inner components\n│           ├── UserAvatar.js\n│           ├── UserAvatar.test.js\n│           ├── UserPosts.js\n│           └── UserPosts.test.js\n└── store\n    └── index.js\n```\n\n## The main unconnected component\n\n[Learn how to write unit-testing for your unconnected components.](unit-testing-components.md)\n\n```js\n/* UserProfile.js */\nimport React from 'react';\n\nimport UserAvatar from './components/UserAvatar';\nimport UserDetailsBox from './components/UserDetailsBox';\nimport UserPhotos from './components/UserPhotos';\nimport UserPosts from './components/UserPosts';\n\nconst UserProfile = ({\n  user,\n  showAvatar,\n  showPosts,\n  showPhotos,\n  updateShowAvatar,\n  updateShowPhotos,\n  updateShowPosts,\n}) => (\n  <div className=\"user-profile\">\n    <UserDetailsBox user={user} />\n    {showAvatar && <UserAvatar user={user} size=\"sm\" />}\n    {showPosts && <UserPhotos user={user} count={5} sort=\"DESC\" />}\n    {showPhotos && <UserPosts user={user} count={5} sort=\"DESC\" />}\n    <input\n      id=\"show-avatar-toggler\"\n      type=\"checkbox\"\n      checked={showAvatar}\n      onChange={e => updateShowAvatar(e.target.checked)}\n    />\n    <input\n      id=\"show-photos-toggler\"\n      type=\"checkbox\"\n      checked={showPhotos}\n      onChange={e => updateShowPhotos(e.target.checked)}\n    />\n    <input\n      id=\"show-posts-toggler\"\n      type=\"checkbox\"\n      checked={showPosts}\n      onChange={e => updateShowPosts(e.target.checked)}\n    />\n  </div>\n);\n\nexport default UserProfile;\n```\n\n## The integration file\n\n[Learn how to write integration-testing for your connected components.](integration-testing.md)\n\n```js\n/* index.js */\nimport { bindActionCreators } from 'redux';\nimport { connect } from 'react-redux';\n\nimport * as actions from './UserProfileActions';\nimport reducer from './UserProfileReducer';\nimport {\n  selectShowAvatar,\n  selectShowPosts,\n  selectShowPhotos,\n} from './UserProfileSelectors';\n\nimport UserProfile from './UserProfile';\n\n// map state to props\nconst mapStateToProps = state => ({\n  showAvatar: selectShowAvatar(state),\n  showPosts: selectShowPosts(state),\n  showPhotos: selectShowPhotos(state),\n});\n\n// map action dispatchers to props\nconst mapDispatchToProps = dispatch => bindActionCreators(actions, dispatch);\n\n// export reducers\nexport const reducers = { userProfile: reducer };\n\n// export connected component\nexport default connect(\n  mapStateToProps,\n  mapDispatchToProps\n)(UserProfile);\n```\n\nNext: [Learn how to write unit-testing for your unconnected components ->](unit-testing-components.md)\n",
+    "static": true,
+    "access": "public"
+  },
+  {
+    "kind": "manual",
+    "longname": "/home/travis/build/sharvit/react-redux-test-utils/docs/unit-testing-components.md",
+    "name": "./docs/unit-testing-components.md",
+    "content": "# Testing components\n\nBefore we can start unit testing our components,\nwe need to adopt an aproach when we exports 2 versions of the same component,\none connected to redux and one unconnected.\n\n[Learn how to manage your code folder structure](manage-your-code-folder-structure.md)\n\n## Component example\n\n```js\n/* UserProfile.js */\nconst UserProfile = ({\n  user,\n  showAvatar,\n  showPosts,\n  showPhotos,\n  updateShowAvatar,\n  updateShowPhotos,\n  updateShowPosts,\n}) => (\n  <div className=\"user-profile\">\n    <UserDetailsBox user={user} />\n    {showAvatar && <UserAvatar user={user} size=\"sm\" />}\n    {showPosts && <UserPhotos user={user} count={5} sort=\"DESC\" />}\n    {showPhotos && <UserPosts user={user} count={5} sort=\"DESC\" />}\n    <input\n      id=\"show-avatar-toggler\"\n      type=\"checkbox\"\n      checked={showAvatar}\n      onChange={e => updateShowAvatar(e.target.checked)}\n    />\n    <input\n      id=\"show-photos-toggler\"\n      type=\"checkbox\"\n      checked={showPhotos}\n      onChange={e => updateShowPhotos(e.target.checked)}\n    />\n    <input\n      id=\"show-posts-toggler\"\n      type=\"checkbox\"\n      checked={showPosts}\n      onChange={e => updateShowPosts(e.target.checked)}\n    />\n  </div>\n);\n```\n\n## Unit testing\n\n```js\n/* UserProfile.test.js */\nimport { testComponentSnapshotsWithFixtures } from 'react-redux-test-utils';\nimport UserProfile from '../UserProfile';\n\nconst fixtures = {\n  'should render UserProfile': {\n    user: 'some-user',\n  },\n  'should render UserProfile with avatar': {\n    user: 'some-user',\n    showAvatar: true,\n  },\n  'should render UserProfile with posts and photos': {\n    user: 'some-user',\n    showPosts: true,\n    showPhotos: true,\n  },\n};\n\ndescribe('UserProfile - component', () =>\n  testComponentSnapshotsWithFixtures(UserProfile, fixtures));\n```\n\nNext: [Learn how to write unit-testing for your actions ->](unit-testing-actions.md)\n",
+    "static": true,
+    "access": "public"
+  },
+  {
+    "kind": "manual",
+    "longname": "/home/travis/build/sharvit/react-redux-test-utils/docs/unit-testing-actions.md",
+    "name": "./docs/unit-testing-actions.md",
+    "content": "# Testing actions\n\n## Testing regular actions\n\nRegular actions are simple actions that return a single object.\nAssuming we have this `UserProfileActions.js`:\n\n```js\n/* UserProfileActions.js */\nexport const updateShowAvatar = showAvatar => ({\n  type: USER_PROFILE_UPDATE_AVATAR,\n  payload: showAvatar,\n});\n\nexport const updateShowPosts = showPosts => ({\n  type: USER_PROFILE_UPDATE_POSTS,\n  payload: showPosts,\n});\n\nexport const updateShowPhotos = showPhotos => ({\n  type: USER_PROFILE_UPDATE_PHOTOS,\n  payload: showPhotos,\n});\n```\n\nTesting this file should be as easy as running those functions and saving the results as a snapshoot.\n`testActionSnapshotWithFixtures` will run over the fixtures and will save each results snapshot.\n\n```js\n/* UserProfileActions.test.js */\nimport { testActionSnapshotWithFixtures } from 'react-redux-test-utils';\nimport {\n  updateShowAvatar,\n  updateShowPosts,\n  updateShowPhotos,\n} from '../UserProfileActions';\n\nconst fixtures = {\n  'should update-show-avatar': () => updateShowAvatar(true),\n  'should update-show-posts': () => updateShowPosts(true),\n  'should update-show-photos': () => updateShowPhotos(true),\n};\n\ndescribe('UserProfile - Actions', () =>\n  testActionSnapshotWithFixtures(fixtures));\n```\n\nThe end results will be similar to:\n\n```js\nimport { testActionSnapshotWithFixtures } from 'react-redux-test-utils';\nimport {\n  updateShowAvatar,\n  updateShowPosts,\n  updateShowPhotos,\n} from '../UserProfileActions';\n\ndescribe('UserProfile - Actions', () => {\n  test('should update-show-avatar', () => {\n    const results = updateShowAvatar(true);\n    expect(results).toMatchSnapshot();\n  });\n  test('should update-show-posts', () => {\n    const results = updateShowPosts(true);\n    expect(results).toMatchSnapshot();\n  });\n  test('should update-show-photos', () => {\n    const results = updateShowPhotos(true);\n    expect(results).toMatchSnapshot();\n  });\n});\n```\n\n## Testing thunk async actions\n\nAsync thunk don't return a simple object, instead, they return an async function that recives a dispatch function as argument.\nAssuming we have the following action:\n\n```js\nimport api from '../common/api';\n\nexport const login = ({ username, password }) => async dispatch => {\n  try {\n    dispatch({\n      type: 'LOGIN_REQUEST',\n      payload: { username, password },\n    });\n\n    const results = await api.post('/login', { username, password });\n\n    dispatch({\n      type: 'LOGIN_SUCCEED',\n      payload: { results },\n    });\n  } catch (error) {\n    dispatch({\n      type: 'LOGIN_ERROR',\n      payload: { error },\n    });\n  }\n};\n```\n\n```js\nimport { testActionSnapshotWithFixtures } from 'react-redux-test-utils';\nimport api from '../common/api';\nimport { login } from './loginActions';\n\njest.mock('../common/api');\n\ndescribe('Login Actions', () => {\n  const correctLogin = { username: 'some-username', password: 'some-password' };\n  const wrongLogin = {\n    username: 'some-wrong-username',\n    password: 'some-wrong-password',\n  };\n\n  api.login.mockImplementation(async credentials =>\n    credentials === correctLogin\n      ? 'succees'\n      : throw new Error('wrong email and password')\n  );\n\n  testActionSnapshotWithFixtures({\n    'should login and succeed': login(correctLogin),\n    'should login and fail': login(wrongLogin),\n  });\n});\n```\n\nNext: [Learn how to write unit-testing for your reducers ->](unit-testing-reducers.md)\n",
+    "static": true,
+    "access": "public"
+  },
+  {
+    "kind": "manual",
+    "longname": "/home/travis/build/sharvit/react-redux-test-utils/docs/unit-testing-reducers.md",
+    "name": "./docs/unit-testing-reducers.md",
+    "content": "# Unit testing reducers\n\n```js\n/* UserProfileReducer.js */\nconst initialState = Immutable({\n  showAvatar: false,\n  showPosts: false,\n  showPhotos: false,\n});\n\nexport default (state = initialState, action) => {\n  const { payload } = action;\n\n  switch (action.type) {\n    case USER_PROFILE_UPDATE_AVATAR:\n      return state.set('showAvatar', payload);\n    case USER_PROFILE_UPDATE_POSTS:\n      return state.set('showPosts', payload);\n    case USER_PROFILE_UPDATE_PHOTOS:\n      return state.set('showPhotos', payload);\n    default:\n      return state;\n  }\n};\n```\n\n```js\n/* UserProfileReducer.test.js */\nimport { testSelectorsSnapshotWithFixtures } from 'react-redux-test-utils';\nimport {\n  selectShowAvatar,\n  selectShowPosts,\n  selectShowPhotos,\n} from '../UserProfileSelectors';\n\nconst state = {\n  userProfile: {\n    showAvatar: 'showAvatar',\n    showPosts: 'showPosts',\n    showPhotos: 'showPhotos',\n  },\n};\n\nconst fixtures = {\n  'should select show-avatar': () => selectShowAvatar(state),\n  'should select show-posts': () => selectShowPosts(state),\n  'should select show-photos': () => selectShowPhotos(state),\n};\n\ndescribe('UserProfile - Selectors', () =>\n  testSelectorsSnapshotWithFixtures(fixtures));\n```\n\nNext: [Learn how to write unit-testing for your selectors ->](unit-testing-selectors.md)\n",
+    "static": true,
+    "access": "public"
+  },
+  {
+    "kind": "manual",
+    "longname": "/home/travis/build/sharvit/react-redux-test-utils/docs/unit-testing-selectors.md",
+    "name": "./docs/unit-testing-selectors.md",
+    "content": "# Unit testing selectors\n\n## Selectors file\n```js\n/* UserProfileSelectors.js */\nconst selectState = state => state.userProfile;\n\nexport const selectShowAvatar = state => selectState(state).showAvatar;\nexport const selectShowPosts = state => selectState(state).showPosts;\nexport const selectShowPhotos = state => selectState(state).showPhotos;\n```\n\n## Unit testing file\n\n```js\n/* UserProfileSelectors.test.js */\nimport { testSelectorsSnapshotWithFixtures } from 'react-redux-test-utils';\nimport {\n  selectShowAvatar,\n  selectShowPosts,\n  selectShowPhotos,\n} from '../UserProfileSelectors';\n\nconst state = {\n  userProfile: {\n    showAvatar: 'showAvatar',\n    showPosts: 'showPosts',\n    showPhotos: 'showPhotos',\n  },\n};\n\nconst fixtures = {\n  'should select show-avatar': () => selectShowAvatar(state),\n  'should select show-posts': () => selectShowPosts(state),\n  'should select show-photos': () => selectShowPhotos(state),\n};\n\ndescribe('UserProfile - Selectors', () =>\n  testSelectorsSnapshotWithFixtures(fixtures));\n```\n\nNext: [Learn how to write integration-testing ->](integration-testing.md)\n",
+    "static": true,
+    "access": "public"
+  },
+  {
+    "kind": "manual",
+    "longname": "/home/travis/build/sharvit/react-redux-test-utils/docs/integration-testing.md",
+    "name": "./docs/integration-testing.md",
+    "content": "# Integration testing\n\nIntegration testing should test the connected-component while activating full redux lifecycle.\n\n## Integration file\n\n```js\n/* index.js */\nimport { bindActionCreators } from 'redux';\nimport { connect } from 'react-redux';\n\nimport * as actions from './UserProfileActions';\nimport reducer from './UserProfileReducer';\nimport {\n  selectShowAvatar,\n  selectShowPosts,\n  selectShowPhotos,\n} from './UserProfileSelectors';\n\nimport UserProfile from './UserProfile';\n\n// map state to props\nconst mapStateToProps = state => ({\n  showAvatar: selectShowAvatar(state),\n  showPosts: selectShowPosts(state),\n  showPhotos: selectShowPhotos(state),\n});\n\n// map action dispatchers to props\nconst mapDispatchToProps = dispatch => bindActionCreators(actions, dispatch);\n\n// export reducers\nexport const reducers = { userProfile: reducer };\n\n// export connected component\nexport default connect(\n  mapStateToProps,\n  mapDispatchToProps\n)(UserProfile);\n```\n\n## Integration test file\n\n```js\n/* __tests__/integration.test.js */\nimport React from 'react';\nimport IntegrationTestHelper from 'react-redux-test-utils';\n\nimport UserProfile, { reducers } from '../index';\n\ndescribe('UserProfile - Integration Test', () => {\n  it('should flow', () => {\n    const integrationTestHelper = new IntegrationTestHelper(reducers);\n\n    const component = integrationTestHelper.mount(\n      <UserProfile user=\"some-user\" />\n    );\n\n    // The user-avatar should not be shown\n    expect(component.exists('UserAvatar')).toEqual(false);\n    integrationTestHelper.takeStoreSnapshot('initial state');\n\n    // trigger checkbox change\n    component\n      .find('input#show-avatar-toggler')\n      .simulate('change', { target: { checked: true } });\n\n    // The user-avatar should be shown now\n    expect(component.exists('UserAvatar')).toEqual(true);\n    integrationTestHelper.takeStoreAndLastActionSnapshot(\n      'Update to show the user-avatar'\n    );\n  });\n});\n```\n",
+    "static": true,
+    "access": "public"
+  },
+  {
+    "kind": "manual",
+    "longname": "/home/travis/build/sharvit/react-redux-test-utils/contributing.md",
+    "name": "./contributing.md",
+    "content": "# Contributing\n\nContributions are always welcome, no matter how large or small.\n\n**Working on your first Pull Request?** You can learn how from this _free_ series [How to Contribute to an Open Source Project on GitHub](https://egghead.io/series/how-to-contribute-to-an-open-source-project-on-github)\n\n## Code of Conduct\n\nBy participating, you are expected to uphold this [Contributor Covenant Code of Conduct](./other/code_of_conduct.md). Please report unacceptable behavior to [sharvita@gmail.com](mailto:sharvita@gmail.com).\n\n## Project setup\n\nFirst, [fork](https://guides.github.com/activities/forking) then clone the repo:\n\n```sh\ngit clone https://github.com/your-username/react-redux-test-utils\ncd react-redux-test-utils\ngit remote add upstream https://github.com/sharvit/react-redux-test-utils\n```\n\nInstall dependencies:\n\n```sh\nyarn\n```\n\nRun test suits to validate the project is working:\n\n```sh\nyarn test\n```\n\nRun linter to validate the project code:\n\n```sh\nyarn lint\n# to fix linting errors\nyarn lint --fix\n# lint your last commited messafe\nyarn lint:commit\n```\n\n## Build\n\nBuild src with babel:\n```\nyarn build\n```\n\n## Documentations\n\nBuild documentations with esdocs to `./htmldocs`\n```\nyarn build:docs\n```\n\nTo develop docs, you can watch and build automatically:\n```\nyarn build:docs:dev\n```\n\n## Committing and Pushing changes\n\nCreate a branch and start hacking:\n\n```sh\ngit checkout -b my-branch\n```\n\nCommit and push your changes:\n\n`generator-node-mdl` uses [commitizen](https://github.com/commitizen/cz-cli) to create commit messages so [semantic-release](https://github.com/semantic-release/semantic-release) can automatically create releases.\n\n```sh\ngit add .\n\nyarn commit\n# answer the questions\n\ngit push origin my-branch\n```\n\nOpen this project on [GitHub](https://github.com/sharvit/generator-node-mdl), then click “Compare & pull request”.\n\n## Help needed\n\nPlease checkout the [`roadmap.md`](./other/roadmap.md) and the open issues.\n\nAlso, please watch the repo and respond to questions/bug reports/feature requests, Thanks!\n",
+    "static": true,
+    "access": "public"
+  },
+  {
+    "kind": "manual",
+    "longname": "/home/travis/build/sharvit/react-redux-test-utils/other/code_of_conduct.md",
+    "name": "./other/code_of_conduct.md",
+    "content": "# Contributor Covenant Code of Conduct\n\n## Our Pledge\n\nIn the interest of fostering an open and welcoming environment, we as contributors and maintainers pledge to making participation in our project and our community a harassment-free experience for everyone, regardless of age, body size, disability, ethnicity, gender identity and expression, level of experience, nationality, personal appearance, race, religion, or sexual identity and orientation.\n\n## Our Standards\n\nExamples of behavior that contributes to creating a positive environment include:\n\n* Using welcoming and inclusive language\n* Being respectful of differing viewpoints and experiences\n* Gracefully accepting constructive criticism\n* Focusing on what is best for the community\n* Showing empathy towards other community members\n\nExamples of unacceptable behavior by participants include:\n\n* The use of sexualized language or imagery and unwelcome sexual attention or advances\n* Trolling, insulting/derogatory comments, and personal or political attacks\n* Public or private harassment\n* Publishing others‘ private information, such as a physical or electronic address, without explicit permission\n* Other conduct which could reasonably be considered inappropriate in a professional setting\n\n## Our Responsibilities\n\nProject maintainers are responsible for clarifying the standards of acceptable behavior and are expected to take appropriate and fair corrective action in response to any instances of unacceptable behavior.\n\nProject maintainers have the right and responsibility to remove, edit, or reject comments, commits, code, wiki edits, issues, and other contributions that are not aligned to this Code of Conduct, or to ban temporarily or permanently any contributor for other behaviors that they deem inappropriate, threatening, offensive, or harmful.\n\n## Scope\n\nThis Code of Conduct applies both within project spaces and in public spaces when an individual is representing the project or its community. Examples of representing a project or community include using an official project e-mail address, posting via an official social media account, or acting as an appointed representative at an online or offline event. Representation of a project may be further defined and clarified by project maintainers.\n\n## Enforcement\n\nInstances of abusive, harassing, or otherwise unacceptable behavior may be reported by contacting the project team at [sharvita@gmail.com](mailto:sharvita@gmail.com). All complaints will be reviewed and investigated and will result in a response that is deemed necessary and appropriate to the circumstances. The project team is obligated to maintain confidentiality with regard to the reporter of an incident. Further details of specific enforcement policies may be posted separately.\n\nProject maintainers who do not follow or enforce the Code of Conduct in good faith may face temporary or permanent repercussions as determined by other members of the project‘s leadership.\n\n## Attribution\n\nThis Code of Conduct is adapted from the [Contributor Covenant][homepage], version 1.4, available at [http://contributor-covenant.org/version/1/4][version]\n\n[homepage]: http://contributor-covenant.org\n[version]: http://contributor-covenant.org/version/1/4/\n",
+    "static": true,
+    "access": "public"
+  },
+  {
+    "kind": "manual",
+    "longname": "/home/travis/build/sharvit/react-redux-test-utils/other/roadmap.md",
+    "name": "./other/roadmap.md",
+    "content": "# Project Roadmap\n\nThis is where we‘ll define a few things about the library‘s goals.\n\nWe haven‘t filled this out yet though. Care to help? See [`contributing.md`](../contributing.md)\n\n## Want to do\n\n## Might do\n\n## Won‘t do\n",
+    "static": true,
+    "access": "public"
+  }
+]
