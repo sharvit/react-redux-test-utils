@@ -1,0 +1,3 @@
+test('output', () => {
+  expect('🐰').toBe('🐰');
+});
