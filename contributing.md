@@ -36,17 +36,31 @@ Run linter to validate the project code:
 yarn lint
 # to fix linting errors
 yarn lint --fix
-```
-
-
-Run linter to validate your commit message:
-
-```sh
+# lint your last committed message
 yarn lint:commit
 ```
 
+## Build
 
-## Committing and Pushing changes
+Build src with babel:
+
+```
+yarn build
+```
+
+## Documentations
+
+Build documentation with esdocs to `./htmldocs`
+
+```
+yarn build:docs
+```
+
+To develop docs, you can watch and build automatically:
+
+```
+yarn build:docs:dev
+```
 
 ## Committing and Pushing changes
 

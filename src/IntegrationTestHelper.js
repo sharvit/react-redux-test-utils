@@ -4,6 +4,10 @@ import { Provider } from 'react-redux';
 import { applyMiddleware, combineReducers, createStore } from 'redux';
 import thunk from 'redux-thunk';
 
+/**
+ * Integration test helper
+ * @since 0.1.0
+ */
 export class IntegrationTestHelper {
   /**
    * Wait for all the promises in the test to get resolved

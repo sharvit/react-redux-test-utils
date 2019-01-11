@@ -15,26 +15,97 @@
 
 ## Why
 
-// TODO
+1. It separates between unit-testing and integration-testing and gives you tools to write both.
+2. It reduces the boilerplate.
+3. It uses a data-driven approach for unit-testing so instead of writing test logic, you define objects that describe your tests.
+4. It is very fast and easy to write tests.
+5. It comes with enzyme and uses snapshots testing.
 
 ## Installation
 
 ```sh
-npm install --save react-redux-test-utils
+# with npm
+npm install --save-dev react-redux-test-utils
+
+# with yarn
+yarn add -D react-redux-test-utils
 ```
 
 ## Usage
 
-```js
-const reactReduxTestUtils = require('react-redux-test-utils');
+`react-redux-test-utils` allow you to write unit-testing that look like this:
 
-reactReduxTestUtils('some text');
-//=> some text
+```js
+/* UserProfile.test.js */
+import { testComponentSnapshotsWithFixtures } from 'react-redux-test-utils';
+import UserProfile from '../UserProfile';
+
+const fixtures = {
+  'should render UserProfile': {
+    user: 'some-user',
+  },
+  'should render UserProfile with avatar': {
+    user: 'some-user',
+    showAvatar: true,
+  },
+  'should render UserProfile with posts and photos': {
+    user: 'some-user',
+    showPosts: true,
+    showPhotos: true,
+  },
+};
+
+describe('UserProfile - component', () =>
+  testComponentSnapshotsWithFixtures(UserProfile, fixtures));
 ```
+
+It also provide the `IntegrationTestHelper` that helps with writing integration-testing:
+
+```js
+/* __tests__/integration.test.js */
+import React from 'react';
+import { IntegrationTestHelper } from 'react-redux-test-utils';
+
+import UserProfile, { reducers } from '../index';
+
+describe('UserProfile - Integration Test', () => {
+  it('should flow', () => {
+    const integrationTestHelper = new IntegrationTestHelper(reducers);
+
+    const component = integrationTestHelper.mount(
+      <UserProfile user="some-user" />
+    );
+
+    // The user-avatar should not be shown
+    expect(component.exists('UserAvatar')).toEqual(false);
+    integrationTestHelper.takeStoreSnapshot('initial state');
+
+    // trigger checkbox change
+    component
+      .find('input#show-avatar-toggler')
+      .simulate('change', { target: { checked: true } });
+
+    // The user-avatar should be shown now
+    expect(component.exists('UserAvatar')).toEqual(true);
+    integrationTestHelper.takeStoreAndLastActionSnapshot(
+      'Update to show the user-avatar'
+    );
+  });
+});
+```
+
+## Documentations
+
+1. [Manage your folder structure.](./docs/manage-your-code-folder-structure.md)
+2. [Unit-testing components.](./docs/unit-testing-components.md)
+3. [Unit-testing redux actions.](./docs/unit-testing-actions.md)
+4. [Unit-testing redux reducers.](./docs/unit-testing-reducers.md)
+5. [Unit-testing redux selectors.](./docs/unit-testing-selectors.md)
+6. [Integration-testing.](./docs/integration-testing.md)
 
 ## Related
 
-// TODO
+1. [generator-react-domain](https://github.com/glekner/generator-react-domain) will help you to generate react components with domain-driven file structuring and with tests file that uses the `react-redux-test-utils`.
 
 ## License
 

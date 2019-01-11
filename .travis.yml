@@ -4,21 +4,31 @@ notifications:
 node_js:
   - 10
   - 8
-  - 6
 script:
   - yarn lint:commit-travis
   - yarn lint
-  - yarn test
   - yarn build
-after_success: yarn coveralls
+  - yarn test && yarn coveralls
 jobs:
   include:
-    - stage: release
+    - stage: Release Docs
       if: branch = master
       node_js: 10
+      script:
+        - yarn build:docs
+      deploy:
+        provider: pages
+        skip-cleanup: true
+        local-dir: htmldocs
+        github-token: $GH_TOKEN
+        keep-history: true
+    - stage: Release NPM
+      if: branch = master
+      node_js: 10
+      script:
+        - yarn build
       deploy:
         provider: script
         skip_cleanup: true
         script:
           - yarn semantic-release
-

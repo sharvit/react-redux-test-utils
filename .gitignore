@@ -54,8 +54,14 @@ typings/
 # Yarn Integrity file
 .yarn-integrity
 
+# Grabage filesystem
+.DS_Store
+
 # dotenv environment variables file
 .env
 
 # compiled
 dist
+
+# compiled docs
+htmldocs
