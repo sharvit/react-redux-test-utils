@@ -31,7 +31,7 @@
 <div data-ice="manual">
     <ul class="manual-toc">
       
-    <li data-ice="manualNav" class="indent-h1" data-link="manual/manage-your-code-folder-structure.html"><a href="manual/manage-your-code-folder-structure.html" data-ice="link">Manage you code folder structure</a></li>
+    <li data-ice="manualNav" class="indent-h1" data-link="manual/manage-your-code-folder-structure.html"><a href="manual/manage-your-code-folder-structure.html" data-ice="link">Manage your code folder structure</a></li>
 <li data-ice="manualNav" class="indent-h2" data-link="manual/manage-your-code-folder-structure.html"><a href="manual/manage-your-code-folder-structure.html#folder-tree" data-ice="link">Folder tree</a></li>
 <li data-ice="manualNav" class="indent-h2" data-link="manual/manage-your-code-folder-structure.html"><a href="manual/manage-your-code-folder-structure.html#the-main-unconnected-component" data-ice="link">The main unconnected component</a></li>
 <li data-ice="manualNav" class="indent-h2" data-link="manual/manage-your-code-folder-structure.html"><a href="manual/manage-your-code-folder-structure.html#the-integration-file" data-ice="link">The integration file</a></li>
@@ -130,7 +130,7 @@ export const updateShowPhotos = showPhotos =&gt; ({
   payload: showPhotos,
 });</code>
 </code></pre>
-<p>Testing this file should be as easy as running those functions and saving the results as a snapshoot.
+<p>Testing this file should be as easy as running those functions and saving the results as a snapshot.
 <code>testActionSnapshotWithFixtures</code> will run over the fixtures and will save each results snapshot.</p>
 <pre><code class="lang-js"><code class="source-code prettyprint">/* UserProfileActions.test.js */
 import { testActionSnapshotWithFixtures } from &apos;react-redux-test-utils&apos;;
@@ -172,7 +172,7 @@ describe(&apos;UserProfile - Actions&apos;, () =&gt; {
   });
 });</code>
 </code></pre>
-<h2 id="testing-thunk-async-actions">Testing thunk async actions</h2><p>Async thunk don&apos;t return a simple object, instead, they return an async function that recives a dispatch function as argument.
+<h2 id="testing-thunk-async-actions">Testing thunk async actions</h2><p>Async thunk doesn&apos;t return a simple object. Instead, they return an async function that receives a dispatch function as an argument.
 Assuming we have the following action:</p>
 <pre><code class="lang-js"><code class="source-code prettyprint">import api from &apos;../common/api&apos;;
 

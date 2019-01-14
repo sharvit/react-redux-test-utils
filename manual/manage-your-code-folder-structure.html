@@ -31,7 +31,7 @@
 <div data-ice="manual">
     <ul class="manual-toc">
       
-    <li data-ice="manualNav" class="indent-h1" data-link="manual/manage-your-code-folder-structure.html"><a href="manual/manage-your-code-folder-structure.html" data-ice="link">Manage you code folder structure</a></li>
+    <li data-ice="manualNav" class="indent-h1" data-link="manual/manage-your-code-folder-structure.html"><a href="manual/manage-your-code-folder-structure.html" data-ice="link">Manage your code folder structure</a></li>
 <li data-ice="manualNav" class="indent-h2" data-link="manual/manage-your-code-folder-structure.html"><a href="manual/manage-your-code-folder-structure.html#folder-tree" data-ice="link">Folder tree</a></li>
 <li data-ice="manualNav" class="indent-h2" data-link="manual/manage-your-code-folder-structure.html"><a href="manual/manage-your-code-folder-structure.html#the-main-unconnected-component" data-ice="link">The main unconnected component</a></li>
 <li data-ice="manualNav" class="indent-h2" data-link="manual/manage-your-code-folder-structure.html"><a href="manual/manage-your-code-folder-structure.html#the-integration-file" data-ice="link">The integration file</a></li>
@@ -112,11 +112,11 @@
 </div>
 </nav>
 
-<div class="content" data-ice="content"><div class="github-markdown" data-ice="content"><h1 id="manage-you-code-folder-structure">Manage you code folder structure</h1><p>Before we can start unit testing our components,
-we need to adopt an aproach when we exports 2 versions of the same component,
+<div class="content" data-ice="content"><div class="github-markdown" data-ice="content"><h1 id="manage-your-code-folder-structure">Manage your code folder structure</h1><p>Before we can start unit testing our components,
+we need to adopt an approach when we export 2 versions of the same component,
 one connected to redux and one unconnected.</p>
-<p>With this approach, we will manage our code folder structure by domain level and we will create small independent and connected mini-packages.
-We will write integration-testing with full redux-flow for our connected component/min-package, and unit-testing for unconnected components, actions, reducers, selectors, helpers and co...</p>
+<p>With this approach, we will manage our code folder structure by domain level, and we will create small independent and connected mini-packages.
+We will write integration-testing with full redux-flow for our connected component/min-package, and unit-testing for unconnected components, actions, reducers, selectors, helpers, and co...</p>
 <h2 id="folder-tree">Folder tree</h2><pre><code><code class="source-code prettyprint">src
 &#x251C;&#x2500;&#x2500; components
 &#x2502;   &#x2514;&#x2500;&#x2500; UserProfile
@@ -219,7 +219,7 @@ export default connect(
   mapDispatchToProps
 )(UserProfile);</code>
 </code></pre>
-<h2 id="use-generators">Use generators</h2><p><a href="https://github.com/glekner/generator-react-domain">generator-react-domain</a> is a recomended generator that will help you to generate react components with domain-driven file structuring and with tests file that uses the <code>react-redux-test-utils</code>.</p>
+<h2 id="use-generators">Use generators</h2><p><a href="https://github.com/glekner/generator-react-domain">generator-react-domain</a> is a recommended generator that will help you to generate react components with domain-driven file structuring and with tests file that uses the <code>react-redux-test-utils</code>.</p>
 <p>Next: <a href="./manual/unit-testing-components.html">Learn how to write unit-testing for your unconnected components -&gt;</a></p>
 </div>
 </div>

@@ -31,7 +31,7 @@
 <div data-ice="manual">
     <ul class="manual-toc">
       
-    <li data-ice="manualNav" class="indent-h1" data-link="manual/manage-your-code-folder-structure.html"><a href="manual/manage-your-code-folder-structure.html" data-ice="link">Manage you code folder structure</a></li>
+    <li data-ice="manualNav" class="indent-h1" data-link="manual/manage-your-code-folder-structure.html"><a href="manual/manage-your-code-folder-structure.html" data-ice="link">Manage your code folder structure</a></li>
 <li data-ice="manualNav" class="indent-h2" data-link="manual/manage-your-code-folder-structure.html"><a href="manual/manage-your-code-folder-structure.html#folder-tree" data-ice="link">Folder tree</a></li>
 <li data-ice="manualNav" class="indent-h2" data-link="manual/manage-your-code-folder-structure.html"><a href="manual/manage-your-code-folder-structure.html#the-main-unconnected-component" data-ice="link">The main unconnected component</a></li>
 <li data-ice="manualNav" class="indent-h2" data-link="manual/manage-your-code-folder-structure.html"><a href="manual/manage-your-code-folder-structure.html#the-integration-file" data-ice="link">The integration file</a></li>
@@ -127,9 +127,9 @@
 <a href="https://github.com/prettier/prettier"><img src="https://img.shields.io/badge/code_style-prettier-ff69b4.svg?style=flat-square" alt="code style: prettier"></a>
 <a href="http://opensource.org/licenses/MIT"><img src="https://img.shields.io/npm/l/stack-overflow-copy-paste.svg?style=flat-square" alt="MIT License"></a></p>
 <h2 id="why">Why</h2><ol>
-<li>It seperates between unit-tesinng and integration-testing and give you tools to write both.</li>
+<li>It separates between unit-testing and integration-testing and gives you tools to write both.</li>
 <li>It reduces the boilerplate.</li>
-<li>It uses data-driven approach for unit-testing so instead of writing test logic, you define objects that describe your tests.</li>
+<li>It uses a data-driven approach for unit-testing so instead of writing test logic, you define objects that describe your tests.</li>
 <li>It is very fast and easy to write tests.</li>
 <li>It comes with enzyme and uses snapshots testing.</li>
 </ol>
@@ -214,10 +214,10 @@ describe(&apos;UserProfile - Integration Test&apos;, () =&gt; {
     
   <div class="manual-card-wrap" data-ice="cards">
       <div class="manual-card">
-        <div data-ice="card"><h1>Manage you code folder structure</h1><p>Before we can start unit testing our components,
-we need to adopt an aproach when we exports 2 versions of the same component,
-one connected to redux and one unconnected.</p><p>With this approach, we will manage our code folder structure by domain level and we will create small independent and connected mini-packages.
-We will write integration-testing with full redux-flow for our connected component/min-package, and unit-testing for unconnected components, actions, reducers, selectors, helpers and co...</p><h2>Folder tree</h2><pre><code><code class="source-code prettyprint">src
+        <div data-ice="card"><h1>Manage your code folder structure</h1><p>Before we can start unit testing our components,
+we need to adopt an approach when we export 2 versions of the same component,
+one connected to redux and one unconnected.</p><p>With this approach, we will manage our code folder structure by domain level, and we will create small independent and connected mini-packages.
+We will write integration-testing with full redux-flow for our connected component/min-package, and unit-testing for unconnected components, actions, reducers, selectors, helpers, and co...</p><h2>Folder tree</h2><pre><code><code class="source-code prettyprint">src
 &#x251C;&#x2500;&#x2500; components
 &#x2502;   &#x2514;&#x2500;&#x2500; UserProfile
 &#x2502;       &#x251C;&#x2500;&#x2500; index.js // integration-file/connected-component
@@ -315,14 +315,14 @@ export default connect(
   mapStateToProps,
   mapDispatchToProps
 )(UserProfile);</code>
-</code></pre><h2>Use generators</h2><p><a href="https://github.com/glekner/generator-react-domain">generator-react-domain</a> is a recomended generator that will help you to generate react components with domain-driven file structuring and with tests file that uses the <code>react-redux-test-utils</code>.</p><p>Next: <a href="./manual/unit-testing-components.md">Learn how to write unit-testing for your unconnected components -&gt;</a></p></div>
+</code></pre><h2>Use generators</h2><p><a href="https://github.com/glekner/generator-react-domain">generator-react-domain</a> is a recommended generator that will help you to generate react components with domain-driven file structuring and with tests file that uses the <code>react-redux-test-utils</code>.</p><p>Next: <a href="./manual/unit-testing-components.md">Learn how to write unit-testing for your unconnected components -&gt;</a></p></div>
         <a data-ice="link" href="manual/manage-your-code-folder-structure.html"></a>
       </div>
     </div>
 <div class="manual-card-wrap" data-ice="cards">
       <div class="manual-card">
         <div data-ice="card"><h1>Testing components</h1><p>Before we can start unit testing our components,
-we need to adopt an aproach when we exports 2 versions of the same component,
+we need to adopt an approach when we export 2 versions of the same component,
 one connected to redux and one unconnected.</p><p><a href="./manual/manage-your-code-folder-structure.md">Learn how to manage your code folder structure</a></p><h2>Component example</h2><pre><code class="lang-js"><code class="source-code prettyprint">/* UserProfile.js */
 const UserProfile = ({
   user,
@@ -401,7 +401,7 @@ export const updateShowPhotos = showPhotos =&gt; ({
   type: USER_PROFILE_UPDATE_PHOTOS,
   payload: showPhotos,
 });</code>
-</code></pre><p>Testing this file should be as easy as running those functions and saving the results as a snapshoot.
+</code></pre><p>Testing this file should be as easy as running those functions and saving the results as a snapshot.
 <code>testActionSnapshotWithFixtures</code> will run over the fixtures and will save each results snapshot.</p><pre><code class="lang-js"><code class="source-code prettyprint">/* UserProfileActions.test.js */
 import { testActionSnapshotWithFixtures } from &apos;react-redux-test-utils&apos;;
 import {
@@ -439,7 +439,7 @@ describe(&apos;UserProfile - Actions&apos;, () =&gt; {
     expect(results).toMatchSnapshot();
   });
 });</code>
-</code></pre><h2>Testing thunk async actions</h2><p>Async thunk don&apos;t return a simple object, instead, they return an async function that recives a dispatch function as argument.
+</code></pre><h2>Testing thunk async actions</h2><p>Async thunk doesn&apos;t return a simple object. Instead, they return an async function that receives a dispatch function as an argument.
 Assuming we have the following action:</p><pre><code class="lang-js"><code class="source-code prettyprint">import api from &apos;../common/api&apos;;
 
 export const login = ({ username, password }) =&gt; async dispatch =&gt; {
@@ -655,10 +655,10 @@ git remote add upstream https://github.com/sharvit/react-redux-test-utils</code>
 </code></pre><p>Run linter to validate the project code:</p><pre><code class="lang-sh"><code class="source-code prettyprint">yarn lint
 # to fix linting errors
 yarn lint --fix
-# lint your last commited messafe
+# lint your last committed message
 yarn lint:commit</code>
 </code></pre><h2>Build</h2><p>Build src with babel:</p><pre><code><code class="source-code prettyprint">yarn build</code>
-</code></pre><h2>Documentations</h2><p>Build documentations with esdocs to <code>./htmldocs</code></p><pre><code><code class="source-code prettyprint">yarn build:docs</code>
+</code></pre><h2>Documentations</h2><p>Build documentation with esdocs to <code>./htmldocs</code></p><pre><code><code class="source-code prettyprint">yarn build:docs</code>
 </code></pre><p>To develop docs, you can watch and build automatically:</p><pre><code><code class="source-code prettyprint">yarn build:docs:dev</code>
 </code></pre><h2>Committing and Pushing changes</h2><p>Create a branch and start hacking:</p><pre><code class="lang-sh"><code class="source-code prettyprint">git checkout -b my-branch</code>
 </code></pre><p>Commit and push your changes:</p><p><code>generator-node-mdl</code> uses <a href="https://github.com/commitizen/cz-cli">commitizen</a> to create commit messages so <a href="https://github.com/semantic-release/semantic-release">semantic-release</a> can automatically create releases.</p><pre><code class="lang-sh"><code class="source-code prettyprint">git add .
