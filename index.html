@@ -125,15 +125,82 @@
 <a href="https://david-dm.org/sharvit/react-redux-test-utils?type=dev"><img src="https://david-dm.org/sharvit/react-redux-test-utils/dev-status.svg" alt="devDependencies Status"></a>
 <a href="https://github.com/prettier/prettier"><img src="https://img.shields.io/badge/code_style-prettier-ff69b4.svg?style=flat-square" alt="code style: prettier"></a>
 <a href="http://opensource.org/licenses/MIT"><img src="https://img.shields.io/npm/l/stack-overflow-copy-paste.svg?style=flat-square" alt="MIT License"></a></p>
-<h2 id="why">Why</h2><p>// TODO</p>
-<h2 id="installation">Installation</h2><pre><code class="lang-sh"><code class="source-code prettyprint">npm install --save react-redux-test-utils</code>
-</code></pre>
-<h2 id="usage">Usage</h2><pre><code class="lang-js"><code class="source-code prettyprint">const reactReduxTestUtils = require(&apos;react-redux-test-utils&apos;);
+<h2 id="why">Why</h2><ol>
+<li>It seperates between unit-tesinng and integration-testing and give you tools to write both.</li>
+<li>It reduces the boilerplate.</li>
+<li>It uses data-driven approach for unit-testing so instead of writing test logic, you define objects that describe your tests.</li>
+<li>It is very fast and easy to write tests.</li>
+<li>It comes with enzyme and uses snapshots testing.</li>
+</ol>
+<h2 id="installation">Installation</h2><pre><code class="lang-sh"><code class="source-code prettyprint"># with npm
+npm install --save-dev react-redux-test-utils
 
-reactReduxTestUtils(&apos;some text&apos;);
-//=&gt; some text</code>
+# with yarn
+yarn add -D react-redux-test-utils</code>
 </code></pre>
-<h2 id="related">Related</h2><p>// TODO</p>
+<h2 id="usage">Usage</h2><p><code>react-redux-test-utils</code> allow you to write unit-testing that look like this:</p>
+<pre><code class="lang-js"><code class="source-code prettyprint">/* UserProfile.test.js */
+import { testComponentSnapshotsWithFixtures } from &apos;react-redux-test-utils&apos;;
+import UserProfile from &apos;../UserProfile&apos;;
+
+const fixtures = {
+  &apos;should render UserProfile&apos;: {
+    user: &apos;some-user&apos;,
+  },
+  &apos;should render UserProfile with avatar&apos;: {
+    user: &apos;some-user&apos;,
+    showAvatar: true,
+  },
+  &apos;should render UserProfile with posts and photos&apos;: {
+    user: &apos;some-user&apos;,
+    showPosts: true,
+    showPhotos: true,
+  },
+};
+
+describe(&apos;UserProfile - component&apos;, () =&gt;
+  testComponentSnapshotsWithFixtures(UserProfile, fixtures));</code>
+</code></pre>
+<p>It also provide the <code>IntegrationTestHelper</code> that helps with writing integration-testing:</p>
+<pre><code class="lang-js"><code class="source-code prettyprint">/* __tests__/integration.test.js */
+import React from &apos;react&apos;;
+import { IntegrationTestHelper } from &apos;react-redux-test-utils&apos;;
+
+import UserProfile, { reducers } from &apos;../index&apos;;
+
+describe(&apos;UserProfile - Integration Test&apos;, () =&gt; {
+  it(&apos;should flow&apos;, () =&gt; {
+    const integrationTestHelper = new IntegrationTestHelper(reducers);
+
+    const component = integrationTestHelper.mount(
+      &lt;UserProfile user=&quot;some-user&quot; /&gt;
+    );
+
+    // The user-avatar should not be shown
+    expect(component.exists(&apos;UserAvatar&apos;)).toEqual(false);
+    integrationTestHelper.takeStoreSnapshot(&apos;initial state&apos;);
+
+    // trigger checkbox change
+    component
+      .find(&apos;input#show-avatar-toggler&apos;)
+      .simulate(&apos;change&apos;, { target: { checked: true } });
+
+    // The user-avatar should be shown now
+    expect(component.exists(&apos;UserAvatar&apos;)).toEqual(true);
+    integrationTestHelper.takeStoreAndLastActionSnapshot(
+      &apos;Update to show the user-avatar&apos;
+    );
+  });
+});</code>
+</code></pre>
+<h2 id="documentations">Documentations</h2><ol>
+<li><a href="./manual/manage-your-code-folder-structure.html">Manage your folder structure.</a></li>
+<li><a href="./manual/unit-testing-components.html">Unit-testing components.</a></li>
+<li><a href="./manual/unit-testing-actions.html">Unit-testing redux actions.</a></li>
+<li><a href="./manual/unit-testing-reducers.html">Unit-testing redux reducers.</a></li>
+<li><a href="./manual/unit-testing-selectors.html">Unit-testing redux selectors.</a></li>
+<li><a href="./manual/integration-testing.html">Integration-testing.</a></li>
+</ol>
 <h2 id="license">License</h2><p>MIT &#xA9; <a href="https://sharvit.github.io">Avi Sharvit</a></p>
 </div>
 
@@ -168,7 +235,7 @@ We will write integration-testing with full redux-flow for our connected compone
 &#x2502;           &#x2514;&#x2500;&#x2500; UserPosts.test.js
 &#x2514;&#x2500;&#x2500; store
     &#x2514;&#x2500;&#x2500; index.js</code>
-</code></pre><h2>The main unconnected component</h2><p><a href="./manual/unit-testing-components.md">Learn how to write unit-testing for your unconnected components.</a></p><pre><code class="lang-js"><code class="source-code prettyprint">/* UserProfile.js */
+./manual/</code></pre><h2>The main unconnected component</h2><p><a href="./manual/unit-testing-components.html">Learn how to write unit-testing for your unconnected components.</a></p><pre><code class="lang-js"><code class="source-code prettyprint">/* UserProfile.js */
 import React from &apos;react&apos;;
 
 import UserAvatar from &apos;./components/UserAvatar&apos;;
@@ -212,7 +279,7 @@ const UserProfile = ({
 );
 
 export default UserProfile;</code>
-</code></pre><h2>The integration file</h2><p><a href="./manual/integration-testing.md">Learn how to write integration-testing for your connected components.</a></p><pre><code class="lang-js"><code class="source-code prettyprint">/* index.js */
+./manual/</code></pre><h2>The integration file</h2><p><a href="./manual/integration-testing.html">Learn how to write integration-testing for your connected components.</a></p><pre><code class="lang-js"><code class="source-code prettyprint">/* index.js */
 import { bindActionCreators } from &apos;redux&apos;;
 import { connect } from &apos;react-redux&apos;;
 
@@ -244,7 +311,7 @@ export default connect(
   mapStateToProps,
   mapDispatchToProps
 )(UserProfile);</code>
-</code></pre><p>Next: <a href="./manual/unit-testing-components.md">Learn how to write unit-testing for your unconnected components -&gt;</a></p></div>
+./manual/</code></pre><p>Next: <a href="./manual/unit-testing-components.html">Learn how to write unit-testing for your unconnected components -&gt;</a></p></div>
         <a data-ice="link" href="manual/manage-your-code-folder-structure.html"></a>
       </div>
     </div>
@@ -252,7 +319,7 @@ export default connect(
       <div class="manual-card">
         <div data-ice="card"><h1>Testing components</h1><p>Before we can start unit testing our components,
 we need to adopt an aproach when we exports 2 versions of the same component,
-one connected to redux and one unconnected.</p><p><a href="./manual/manage-your-code-folder-structure.md">Learn how to manage your code folder structure</a></p><h2>Component example</h2><pre><code class="lang-js"><code class="source-code prettyprint">/* UserProfile.js */
+./manual/one connected to redux and one unconnected.</p><p><a href="./manual/manage-your-code-folder-structure.html">Learn how to manage your code folder structure</a></p><h2>Component example</h2><pre><code class="lang-js"><code class="source-code prettyprint">/* UserProfile.js */
 const UserProfile = ({
   user,
   showAvatar,
@@ -308,7 +375,7 @@ const fixtures = {
 
 describe(&apos;UserProfile - component&apos;, () =&gt;
   testComponentSnapshotsWithFixtures(UserProfile, fixtures));</code>
-</code></pre><p>Next: <a href="./manual/unit-testing-actions.md">Learn how to write unit-testing for your actions -&gt;</a></p></div>
+./manual/</code></pre><p>Next: <a href="./manual/unit-testing-actions.html">Learn how to write unit-testing for your actions -&gt;</a></p></div>
         <a data-ice="link" href="manual/unit-testing-components.html"></a>
       </div>
     </div>
@@ -415,7 +482,7 @@ describe(&apos;Login Actions&apos;, () =&gt; {
     &apos;should login and fail&apos;: login(wrongLogin),
   });
 });</code>
-</code></pre><p>Next: <a href="./manual/unit-testing-reducers.md">Learn how to write unit-testing for your reducers -&gt;</a></p></div>
+./manual/</code></pre><p>Next: <a href="./manual/unit-testing-reducers.html">Learn how to write unit-testing for your reducers -&gt;</a></p></div>
         <a data-ice="link" href="manual/unit-testing-actions.html"></a>
       </div>
     </div>
@@ -466,7 +533,7 @@ const fixtures = {
 
 describe(&apos;UserProfile - Selectors&apos;, () =&gt;
   testSelectorsSnapshotWithFixtures(fixtures));</code>
-</code></pre><p>Next: <a href="./manual/unit-testing-selectors.md">Learn how to write unit-testing for your selectors -&gt;</a></p></div>
+./manual/</code></pre><p>Next: <a href="./manual/unit-testing-selectors.html">Learn how to write unit-testing for your selectors -&gt;</a></p></div>
         <a data-ice="link" href="manual/unit-testing-reducers.html"></a>
       </div>
     </div>
@@ -502,7 +569,7 @@ const fixtures = {
 
 describe(&apos;UserProfile - Selectors&apos;, () =&gt;
   testSelectorsSnapshotWithFixtures(fixtures));</code>
-</code></pre><p>Next: <a href="./manual/integration-testing.md">Learn how to write integration-testing -&gt;</a></p></div>
+./manual/</code></pre><p>Next: <a href="./manual/integration-testing.html">Learn how to write integration-testing -&gt;</a></p></div>
         <a data-ice="link" href="manual/unit-testing-selectors.html"></a>
       </div>
     </div>
@@ -542,7 +609,7 @@ export default connect(
 )(UserProfile);</code>
 </code></pre><h2>Integration test file</h2><pre><code class="lang-js"><code class="source-code prettyprint">/* __tests__/integration.test.js */
 import React from &apos;react&apos;;
-import IntegrationTestHelper from &apos;react-redux-test-utils&apos;;
+import { IntegrationTestHelper } from &apos;react-redux-test-utils&apos;;
 
 import UserProfile, { reducers } from &apos;../index&apos;;
 
@@ -576,7 +643,7 @@ describe(&apos;UserProfile - Integration Test&apos;, () =&gt; {
     </div>
 <div class="manual-card-wrap" data-ice="cards">
       <div class="manual-card">
-        <div data-ice="card"><h1>Contributing</h1><p>Contributions are always welcome, no matter how large or small.</p><p><strong>Working on your first Pull Request?</strong> You can learn how from this <em>free</em> series <a href="https://egghead.io/series/how-to-contribute-to-an-open-source-project-on-github">How to Contribute to an Open Source Project on GitHub</a></p><h2>Code of Conduct</h2><p>By participating, you are expected to uphold this <a href="./manual/./other/code_of_conduct.md">Contributor Covenant Code of Conduct</a>. Please report unacceptable behavior to <a href="./manual/mailto:sharvita@gmail.com">sharvita@gmail.com</a>.</p><h2>Project setup</h2><p>First, <a href="https://guides.github.com/activities/forking">fork</a> then clone the repo:</p><pre><code class="lang-sh"><code class="source-code prettyprint">git clone https://github.com/your-username/react-redux-test-utils
+        <div data-ice="card"><h1>Contributing</h1><p>Contributions are always welcome, no matter how large or small.</p><p><strong>Working on your first Pull Request?</strong> You can learn how from this <em>free</em> series <a href="https://egghead.io/series/how-to-contribute-to-an-open-source-project-on-github">How to Contribute to an Open Source Project on GitHub</a></p><h2>Code of Conduct</h2><p>By participating, you are expected to uphold this <a href="./manual/./manual/code_of_conduct.html">Contributor Covenant Code of Conduct</a>. Please report unacceptable behavior to <a href="./manual/mailto:sharvita@gmail.com">sharvita@gmail.com</a>.</p><h2>Project setup</h2><p>First, <a href="https://guides.github.com/activities/forking">fork</a> then clone the repo:</p><pre><code class="lang-sh"><code class="source-code prettyprint">git clone https://github.com/your-username/react-redux-test-utils
 cd react-redux-test-utils
 git remote add upstream https://github.com/sharvit/react-redux-test-utils</code>
 </code></pre><p>Install dependencies:</p><pre><code class="lang-sh"><code class="source-code prettyprint">yarn</code>
@@ -590,13 +657,13 @@ yarn lint:commit</code>
 </code></pre><h2>Documentations</h2><p>Build documentations with esdocs to <code>./htmldocs</code></p><pre><code><code class="source-code prettyprint">yarn build:docs</code>
 </code></pre><p>To develop docs, you can watch and build automatically:</p><pre><code><code class="source-code prettyprint">yarn build:docs:dev</code>
 </code></pre><h2>Committing and Pushing changes</h2><p>Create a branch and start hacking:</p><pre><code class="lang-sh"><code class="source-code prettyprint">git checkout -b my-branch</code>
-</code></pre><p>Commit and push your changes:</p><p><code>generator-node-mdl</code> uses <a href="https://github.com/commitizen/cz-cli">commitizen</a> to create commit messages so <a href="https://github.com/semantic-release/semantic-release">semantic-release</a> can automatically create releases.</p><pre><code class="lang-sh"><code class="source-code prettyprint">git add .
+./manual/</code></pre><p>Commit and push your changes:</p><p><code>generator-node.htmll</code> uses <a href="https://github.com/commitizen/cz-cli">commitizen</a> to create commit messages so <a href="https://github.com/semantic-release/semantic-release">semantic-release</a> can automatically create releases.</p><pre><code class="lang-sh"><code class="source-code prettyprint">git add .
 
 yarn commit
 # answer the questions
 
 git push origin my-branch</code>
-</code></pre><p>Open this project on <a href="https://github.com/sharvit/generator-node-mdl">GitHub</a>, then click &#x201C;Compare &amp; pull request&#x201D;.</p><h2>Help needed</h2><p>Please checkout the <a href="./manual/./other/roadmap.md"><code>roadmap.md</code></a> and the open issues.</p><p>Also, please watch the repo and respond to questions/bug reports/feature requests, Thanks!</p></div>
+./manual/</code></pre><p>Open this project on <a href="https://github.com/sharvit/generator-node.html./manual/l">GitHub</a>, then click &#x201C;Compare &amp; pull request&#x201D;.</p><h2>Help needed</h2><p>Please checkout the <a href="./manual/./manual/roadmap.html"><code>roadmap.html</code></a> and the open issues.</p><p>Also, please watch the repo and respond to questions/bug reports/feature requests, Thanks!</p></div>
         <a data-ice="link" href="manual/contributing.html"></a>
       </div>
     </div>
@@ -620,7 +687,7 @@ git push origin my-branch</code>
     </div>
 <div class="manual-card-wrap" data-ice="cards">
       <div class="manual-card">
-        <div data-ice="card"><h1>Project Roadmap</h1><p>This is where we&#x2018;ll define a few things about the library&#x2018;s goals.</p><p>We haven&#x2018;t filled this out yet though. Care to help? See <a href="./manual/../contributing.md"><code>contributing.md</code></a></p><h2>Want to do</h2><h2>Might do</h2><h2>Won&#x2018;t do</h2></div>
+./manual/        <div data-ice="card"><h1>Project Roadmap</h1><p>This is where we&#x2018;ll define a few things about the library&#x2018;s goals.</p><p>We haven&#x2018;t filled this out yet though. Care to help? See <a href="./manual/contributing.html./manual/"><code>contributing.html</code></a></p><h2>Want to do</h2><h2>Might do</h2><h2>Won&#x2018;t do</h2></div>
         <a data-ice="link" href="manual/roadmap.html"></a>
       </div>
     </div>
