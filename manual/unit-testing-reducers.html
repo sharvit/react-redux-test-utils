@@ -112,52 +112,67 @@
 </div>
 </nav>
 
-<div class="content" data-ice="content"><div class="github-markdown" data-ice="content"><h1 id="unit-testing-reducers">Unit testing reducers</h1><pre><code class="lang-js"><code class="source-code prettyprint">/* UserProfileReducer.js */
+<div class="content" data-ice="content"><div class="github-markdown" data-ice="content"><h1 id="unit-testing-reducers">Unit testing reducers</h1><pre><code class="lang-js"><code class="source-code prettyprint">/* LoginFormReducer.js */
+import {
+  LOGIN_FORM_UPDATE_USERNAME,
+  LOGIN_FORM_UPDATE_PASSWORD,
+  LOGIN_FORM_TOGGLE_REMEMBER_ME,
+} from &apos;../LoginFormConstants&apos;;
+
 const initialState = Immutable({
-  showAvatar: false,
-  showPosts: false,
-  showPhotos: false,
+  username: &apos;&apos;,
+  password: &apos;&apos;,
+  rememberMe: false,
 });
 
 export default (state = initialState, action) =&gt; {
   const { payload } = action;
 
   switch (action.type) {
-    case USER_PROFILE_UPDATE_AVATAR:
-      return state.set(&apos;showAvatar&apos;, payload);
-    case USER_PROFILE_UPDATE_POSTS:
-      return state.set(&apos;showPosts&apos;, payload);
-    case USER_PROFILE_UPDATE_PHOTOS:
-      return state.set(&apos;showPhotos&apos;, payload);
+    case LOGIN_FORM_UPDATE_USERNAME:
+      return state.set(&apos;username&apos;, payload);
+    case LOGIN_FORM_UPDATE_PASSWORD:
+      return state.set(&apos;password&apos;, payload);
+    case LOGIN_FORM_TOGGLE_REMEMBER_ME:
+      return state.set(&apos;rememberMe&apos;, !state.rememberMe);
     default:
       return state;
   }
 };</code>
 </code></pre>
-<pre><code class="lang-js"><code class="source-code prettyprint">/* UserProfileReducer.test.js */
-import { testSelectorsSnapshotWithFixtures } from &apos;react-redux-test-utils&apos;;
+<pre><code class="lang-js"><code class="source-code prettyprint">/* LoginFormReducer.test.js */
+import { testReducerSnapshotWithFixtures } from &apos;react-redux-test-utils&apos;;
 import {
-  selectShowAvatar,
-  selectShowPosts,
-  selectShowPhotos,
-} from &apos;../UserProfileSelectors&apos;;
+  LOGIN_FORM_UPDATE_USERNAME,
+  LOGIN_FORM_UPDATE_PASSWORD,
+  LOGIN_FORM_TOGGLE_REMEMBER_ME,
+} from &apos;../LoginFormConstants&apos;;
 
-const state = {
-  userProfile: {
-    showAvatar: &apos;showAvatar&apos;,
-    showPosts: &apos;showPosts&apos;,
-    showPhotos: &apos;showPhotos&apos;,
+import reducer from &apos;../LoginFormReducer&apos;;
+
+const fixtures = {
+  &apos;it should update username&apos;: {
+      action: {
+        type: LOGIN_FORM_UPDATE_USERNAME,
+        payload: { username: &apos;some-username&apos; }
+      }
+  },
+  &apos;it should update password&apos;: {
+    action: {
+      type: LOGIN_FORM_UPDATE_PASSWORD,
+      payload: { password: &apos;some-password&apos; }
+    }
+  },
+  &apos;it should toggle remember-me&apos;: {
+    state: { rememberMe: false },
+    action: {
+      type: LOGIN_FORM_TOGGLE_REMEMBER_ME,
+    }
   },
 };
 
-const fixtures = {
-  &apos;should select show-avatar&apos;: () =&gt; selectShowAvatar(state),
-  &apos;should select show-posts&apos;: () =&gt; selectShowPosts(state),
-  &apos;should select show-photos&apos;: () =&gt; selectShowPhotos(state),
-};
-
-describe(&apos;UserProfile - Selectors&apos;, () =&gt;
-  testSelectorsSnapshotWithFixtures(fixtures));</code>
+describe(&apos;LoginForm - Reducer&apos;, () =&gt;
+  testReducerSnapshotWithFixtures(reducer, fixtures));</code>
 </code></pre>
 <p>Next: <a href="./manual/unit-testing-selectors.html">Learn how to write unit-testing for your selectors -&gt;</a></p>
 </div>
