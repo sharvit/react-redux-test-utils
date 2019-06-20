@@ -19,11 +19,12 @@ export class IntegrationTestHelper {
   /**
    * Create an integration-test-helper
    * @param {ReduxReducers} reducers reducers to apply
+   * @param {ReduxMiddlewares} middlewares array of middlewares to apply
    */
-  constructor(reducers) {
+  constructor(reducers, middlewares = []) {
     this.dispatchSpy = jest.fn(() => ({}));
     const reducerSpy = (state, action) => this.dispatchSpy(action);
-    const emptyStore = applyMiddleware(thunk)(createStore);
+    const emptyStore = applyMiddleware(thunk, ...middlewares)(createStore);
     const combinedReducers = combineReducers({
       reducerSpy,
       ...reducers,
