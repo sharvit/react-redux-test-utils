@@ -567,7 +567,7 @@
     "__docId__": 48,
     "kind": "file",
     "name": "src/IntegrationTestHelper.js",
-    "content": "import React from 'react';\nimport { mount } from 'enzyme';\nimport { Provider } from 'react-redux';\nimport { applyMiddleware, combineReducers, createStore } from 'redux';\nimport thunk from 'redux-thunk';\n\n/**\n * Integration test helper\n * @since 0.1.0\n */\nexport class IntegrationTestHelper {\n  /**\n   * Wait for all the promises in the test to get resolved\n   * @return {Promise}\n   */\n  static flushAllPromises() {\n    return new Promise(resolve => setImmediate(resolve));\n  }\n  /**\n   * Create an integration-test-helper\n   * @param {ReduxReducers} reducers reducers to apply\n   */\n  constructor(reducers) {\n    this.dispatchSpy = jest.fn(() => ({}));\n    const reducerSpy = (state, action) => this.dispatchSpy(action);\n    const emptyStore = applyMiddleware(thunk)(createStore);\n    const combinedReducers = combineReducers({\n      reducerSpy,\n      ...reducers,\n    });\n\n    this.store = emptyStore(combinedReducers);\n  }\n  /**\n   * Mount a component with the store\n   * @param  {ReactNode} component A react node to mount\n   * @return {EnzymeMount}         Mounted component with enzyme and redux store\n   */\n  mount(component) {\n    return mount(<Provider store={this.store}>{component}</Provider>);\n  }\n  /**\n   * Get the current state object\n   * @return {Object} Current state\n   */\n  getState() {\n    const state = this.store.getState();\n    delete state.reducerSpy;\n    return state;\n  }\n  /**\n   * Get a list with all dispach calls\n   * @return {Array} Dispach calls\n   */\n  getDispatchCalls() {\n    const isRelevantCall = call =>\n      call.filter(({ type }) => type.startsWith('@@redux')).length === 0;\n\n    return this.dispatchSpy.mock.calls.filter(isRelevantCall);\n  }\n  /**\n   * Get the last dispach call\n   * @return {Array} dispach call\n   */\n  getLastDispachCall() {\n    return this.getDispatchCalls().slice(-1);\n  }\n  /**\n   * Take a store snapshot\n   * @param  {string} description Snapshoot description\n   */\n  takeStoreSnapshot(description) {\n    expect(this.getState()).toMatchSnapshot(description);\n  }\n  /**\n   * Take a snapshot of all the actions\n   * @param  {string} description Snapshoot description\n   */\n  takeActionsSnapshot(description = 'Integration test actions') {\n    expect(this.getDispatchCalls()).toMatchSnapshot(description);\n  }\n  /**\n   * Take a snapshot of the last called action\n   * @param  {string} description Snapshoot description\n   */\n  takeLastActionSnapshot(description) {\n    expect(this.getLastDispachCall()).toMatchSnapshot(description);\n  }\n  /**\n   * Take a snapshot of the store together with the last action call\n   * @param  {string} description Snapshot description\n   */\n  takeStoreAndLastActionSnapshot(description) {\n    const state = this.getState();\n    const action = this.getLastDispachCall();\n\n    expect({ state, action }).toMatchSnapshot(description);\n  }\n}\n",
+    "content": "import React from 'react';\nimport { mount } from 'enzyme';\nimport { Provider } from 'react-redux';\nimport { applyMiddleware, combineReducers, createStore } from 'redux';\nimport thunk from 'redux-thunk';\n\n/**\n * Integration test helper\n * @since 0.1.0\n */\nexport class IntegrationTestHelper {\n  /**\n   * Wait for all the promises in the test to get resolved\n   * @return {Promise}\n   */\n  static flushAllPromises() {\n    return new Promise(resolve => setImmediate(resolve));\n  }\n  /**\n   * Create an integration-test-helper\n   * @param {ReduxReducers} reducers reducers to apply\n   * @param {ReduxMiddlewares} middlewares array of middlewares to apply\n   */\n  constructor(reducers, middlewares = []) {\n    this.dispatchSpy = jest.fn(() => ({}));\n    const reducerSpy = (state, action) => this.dispatchSpy(action);\n    const emptyStore = applyMiddleware(thunk, ...middlewares)(createStore);\n    const combinedReducers = combineReducers({\n      reducerSpy,\n      ...reducers,\n    });\n\n    this.store = emptyStore(combinedReducers);\n  }\n  /**\n   * Mount a component with the store\n   * @param  {ReactNode} component A react node to mount\n   * @return {EnzymeMount}         Mounted component with enzyme and redux store\n   */\n  mount(component) {\n    return mount(<Provider store={this.store}>{component}</Provider>);\n  }\n  /**\n   * Get the current state object\n   * @return {Object} Current state\n   */\n  getState() {\n    const state = this.store.getState();\n    delete state.reducerSpy;\n    return state;\n  }\n  /**\n   * Get a list with all dispach calls\n   * @return {Array} Dispach calls\n   */\n  getDispatchCalls() {\n    const isRelevantCall = call =>\n      call.filter(({ type }) => type.startsWith('@@redux')).length === 0;\n\n    return this.dispatchSpy.mock.calls.filter(isRelevantCall);\n  }\n  /**\n   * Get the last dispach call\n   * @return {Array} dispach call\n   */\n  getLastDispachCall() {\n    return this.getDispatchCalls().slice(-1);\n  }\n  /**\n   * Take a store snapshot\n   * @param  {string} description Snapshoot description\n   */\n  takeStoreSnapshot(description) {\n    expect(this.getState()).toMatchSnapshot(description);\n  }\n  /**\n   * Take a snapshot of all the actions\n   * @param  {string} description Snapshoot description\n   */\n  takeActionsSnapshot(description = 'Integration test actions') {\n    expect(this.getDispatchCalls()).toMatchSnapshot(description);\n  }\n  /**\n   * Take a snapshot of the last called action\n   * @param  {string} description Snapshoot description\n   */\n  takeLastActionSnapshot(description) {\n    expect(this.getLastDispachCall()).toMatchSnapshot(description);\n  }\n  /**\n   * Take a snapshot of the store together with the last action call\n   * @param  {string} description Snapshot description\n   */\n  takeStoreAndLastActionSnapshot(description) {\n    const state = this.getState();\n    const action = this.getLastDispachCall();\n\n    expect({ state, action }).toMatchSnapshot(description);\n  }\n}\n",
     "static": true,
     "longname": "/home/travis/build/sharvit/react-redux-test-utils/src/IntegrationTestHelper.js",
     "access": "public",
@@ -622,7 +622,7 @@
     "longname": "src/IntegrationTestHelper.js~IntegrationTestHelper#constructor",
     "access": "public",
     "description": "Create an integration-test-helper",
-    "lineNumber": 23,
+    "lineNumber": 24,
     "params": [
       {
         "nullable": null,
@@ -633,6 +633,16 @@
         "optional": false,
         "name": "reducers",
         "description": "reducers to apply"
+      },
+      {
+        "nullable": null,
+        "types": [
+          "ReduxMiddlewares"
+        ],
+        "spread": false,
+        "optional": false,
+        "name": "middlewares",
+        "description": "array of middlewares to apply"
       }
     ]
   },
@@ -645,7 +655,7 @@
     "longname": "src/IntegrationTestHelper.js~IntegrationTestHelper#dispatchSpy",
     "access": "public",
     "description": null,
-    "lineNumber": 24,
+    "lineNumber": 25,
     "undocument": true,
     "ignore": true
   },
@@ -658,7 +668,7 @@
     "longname": "src/IntegrationTestHelper.js~IntegrationTestHelper#store",
     "access": "public",
     "description": null,
-    "lineNumber": 32,
+    "lineNumber": 33,
     "undocument": true,
     "ignore": true
   },
@@ -673,7 +683,7 @@
     "longname": "src/IntegrationTestHelper.js~IntegrationTestHelper#mount",
     "access": "public",
     "description": "Mount a component with the store",
-    "lineNumber": 39,
+    "lineNumber": 40,
     "params": [
       {
         "nullable": null,
@@ -706,7 +716,7 @@
     "longname": "src/IntegrationTestHelper.js~IntegrationTestHelper#getState",
     "access": "public",
     "description": "Get the current state object",
-    "lineNumber": 46,
+    "lineNumber": 47,
     "return": {
       "nullable": null,
       "types": [
@@ -727,7 +737,7 @@
     "longname": "src/IntegrationTestHelper.js~IntegrationTestHelper#getDispatchCalls",
     "access": "public",
     "description": "Get a list with all dispach calls",
-    "lineNumber": 55,
+    "lineNumber": 56,
     "return": {
       "nullable": null,
       "types": [
@@ -748,7 +758,7 @@
     "longname": "src/IntegrationTestHelper.js~IntegrationTestHelper#getLastDispachCall",
     "access": "public",
     "description": "Get the last dispach call",
-    "lineNumber": 65,
+    "lineNumber": 66,
     "return": {
       "nullable": null,
       "types": [
@@ -769,7 +779,7 @@
     "longname": "src/IntegrationTestHelper.js~IntegrationTestHelper#takeStoreSnapshot",
     "access": "public",
     "description": "Take a store snapshot",
-    "lineNumber": 72,
+    "lineNumber": 73,
     "params": [
       {
         "nullable": null,
@@ -794,7 +804,7 @@
     "longname": "src/IntegrationTestHelper.js~IntegrationTestHelper#takeActionsSnapshot",
     "access": "public",
     "description": "Take a snapshot of all the actions",
-    "lineNumber": 79,
+    "lineNumber": 80,
     "params": [
       {
         "nullable": null,
@@ -819,7 +829,7 @@
     "longname": "src/IntegrationTestHelper.js~IntegrationTestHelper#takeLastActionSnapshot",
     "access": "public",
     "description": "Take a snapshot of the last called action",
-    "lineNumber": 86,
+    "lineNumber": 87,
     "params": [
       {
         "nullable": null,
@@ -844,7 +854,7 @@
     "longname": "src/IntegrationTestHelper.js~IntegrationTestHelper#takeStoreAndLastActionSnapshot",
     "access": "public",
     "description": "Take a snapshot of the store together with the last action call",
-    "lineNumber": 93,
+    "lineNumber": 94,
     "params": [
       {
         "nullable": null,

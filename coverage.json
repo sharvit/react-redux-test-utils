@@ -7,8 +7,8 @@
       "expectCount": 13,
       "actualCount": 11,
       "undocumentLines": [
-        24,
-        32
+        25,
+        33
       ]
     },
     "src/unit-test-helpers.js": {
